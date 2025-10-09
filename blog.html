@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Blog & Notícias — Todos Pela Educação</title>
+  <meta name="description" content="Acompanhe notícias, artigos e relatos de campo da Todos Pela Educação. Novidades sobre projetos, eventos e conteúdos de aprendizagem." />
+  <meta name="keywords" content="blog, notícias, educação, artigos, eventos, projetos, todos pela educação" />
+  <meta name="author" content="Todos Pela Educação" />
+
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+  <link rel="icon" href="images/favicon.png" type="image/png" />
+  <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" />
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,600,700&display=swap" rel="stylesheet" />
+
+  <style>
+    :root{ --azul:#0b3b81; --amarelo:#ffd100; --bg-suave:#f7fbff; }
+    body{ font-family:'Poppins', sans-serif; }
+    .header_section { background:var(--azul); }
+    .hero-mini{ background:var(--azul) url('images/hero-blog.jpg') center/cover no-repeat; color:#fff; padding:90px 0; position:relative; text-align:center; }
+    .hero-mini::after{ content:""; position:absolute; inset:0; background:rgba(11,59,129,.55); }
+    .hero-mini .container{ position:relative; z-index:2; }
+    .hero-mini h1{ font-weight:700; margin-bottom:8px; }
+    .lead-muted{ color:#e7efff; max-width:880px; margin:0 auto; }
+
+    .block{ padding:56px 0; }
+    .post-card{ background:#fff; border:1px solid #eef2f7; border-radius:16px; overflow:hidden; box-shadow:0 6px 16px rgba(0,0,0,.04); height:100%; display:flex; flex-direction:column; }
+    .post-card img{ width:100%; height:200px; object-fit:cover; }
+    .post-body{ padding:18px; display:flex; flex-direction:column; flex:1; }
+    .post-meta{ font-size:.85rem; color:#64748b; display:flex; gap:12px; flex-wrap:wrap; }
+    .post-title{ margin:.35rem 0 .25rem; font-weight:700; line-height:1.3; }
+    .post-excerpt{ color:#475569; margin-bottom:12px; }
+    .post-actions{ margin-top:auto; }
+    .badge-cat{ background:#eef2f7; color:#0b3b81; border-radius:999px; padding:2px 10px; font-size:.8rem; }
+
+    .sidebar .widget{ background:#fff; border:1px solid #eef2f7; border-radius:16px; padding:18px; box-shadow:0 6px 16px rgba(0,0,0,.04); }
+    .search-input{ border-radius:12px; }
+    .tag{ display:inline-block; border:1px solid #e5e9f2; border-radius:999px; padding:6px 12px; margin:4px 6px 0 0; font-size:.85rem; }
+
+    .pagination .page-link{ border-radius:10px; margin:0 4px; }
+    .news-bar{ background:var(--bg-suave); border-bottom:1px solid #eaf1fb; }
+    .news-bar .ticker{ display:flex; gap:16px; align-items:center; white-space:nowrap; overflow:auto; padding:10px 0; }
+    .news-bar .ticker a{ color:#0b3b81; }
+  </style>
+
+</head>
+<body>
+  <!-- header -->
+  <div class="header_section">
+    <div class="container-fluid">
+      <nav class="navbar navbar-light justify-content-between navbar-expand-lg navbar-dark">
+        <div id="mySidenav" class="sidenav">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <a href="index.html">Início</a>
+          <a href="sobre.html">Sobre</a>
+          <a href="projeto-primeira-infancia.html">Projetos</a>
+          <a href="doacao.html">Doações</a>
+          <a href="transparencia.html">Transparência</a>
+          <a href="blog.html" class="active">Blog & Notícias</a>
+          <a href="contato.html">Contato</a>
+        </div>
+        <button class="navbar-toggler" type="button" onclick="openNav()" aria-label="Abrir menu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="logo navbar-brand ml-2" href="index.html">
+          <img src="images/logo-educacao.png" alt="Logo Todos Pela Educação" />
+        </a>
+        <div class="d-none d-lg-flex">
+          <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="index.html">Início</a></li>
+            <li class="nav-item"><a class="nav-link" href="sobre.html">Sobre</a></li>
+            <li class="nav-item"><a class="nav-link" href="projeto-primeira-infancia.html">Projetos</a></li>
+            <li class="nav-item"><a class="nav-link" href="doacao.html">Doações</a></li>
+            <li class="nav-item"><a class="nav-link" href="transparencia.html">Transparência</a></li>
+            <li class="nav-item"><a class="nav-link active" href="blog.html">Blog</a></li>
+            <li class="nav-item"><a class="btn btn-sm btn-primary ml-2" href="doacao.html">Doe agora</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </div>
+
+  <!-- hero mini -->
+  <section class="hero-mini">
+    <div class="container">
+      <h1>Blog & Notícias</h1>
+      <p class="lead lead-muted">Insights, atualizações e histórias que mostram o impacto da educação pública de qualidade.</p>
+    </div>
+  </section>
+
+  <!-- conteúdo -->
+  <section class="block">
+    <div class="container">
+      <div class="row">
+        <!-- posts -->
+        <div class="col-lg-8">
+          <div class="row g-4">
+            <!-- post 1 -->
+            <div class="col-md-6">
+              <article class="post-card">
+                <img src="images/blog-1.jpg" alt="Formação docente"/>
+                <div class="post-body">
+                  <div class="post-meta"><span><i class="fa fa-calendar"></i> 06 out 2025</span><span><i class="fa fa-user"></i> Equipe TPE</span><span class="badge-cat">Formação</span></div>
+                  <h5 class="post-title">Metodologias ativas e o impacto na aprendizagem</h5>
+                  <p class="post-excerpt">Como projetos práticos e aprendizagem colaborativa estão elevando engajamento e resultados em turmas do Fundamental.</p>
+                  <!-- <div class="post-actions"><a href="post-metodologias-ativas.html" class="btn btn-sm btn-outline-primary">Ler mais</a></div> -->
+                </div>
+              </article>
+            </div>
+            <!-- post 2 -->
+            <div class="col-md-6">
+              <article class="post-card">
+                <img src="images/blog-2.jpg" alt="Inclusão Digital"/>
+                <div class="post-body">
+                  <div class="post-meta"><span><i class="fa fa-calendar"></i> 28 set 2025</span><span><i class="fa fa-user"></i> Comunicação</span><span class="badge-cat">Inclusão Digital</span></div>
+                  <h5 class="post-title">Novos laboratórios e trilhas de letramento digital</h5>
+                  <p class="post-excerpt">Parcerias comunitárias e formação docente ampliam o acesso e o uso pedagógico de tecnologias em escolas públicas.</p>
+                  <!-- <div class="post-actions"><a href="post-letramento-digital.html" class="btn btn-sm btn-outline-primary">Ler mais</a></div> -->
+                </div>
+              </article>
+            </div>
+            <!-- post 3 -->
+            <div class="col-md-6">
+              <article class="post-card">
+                <img src="images/blog-3.jpg" alt="Primeira Infância"/>
+                <div class="post-body">
+                  <div class="post-meta"><span><i class="fa fa-calendar"></i> 15 set 2025</span><span><i class="fa fa-user"></i> Projetos</span><span class="badge-cat">Primeira Infância</span></div>
+                  <h5 class="post-title">Brincar para aprender: práticas na Educação Infantil</h5>
+                  <p class="post-excerpt">Sequências didáticas lúdicas e avaliação formativa em creches e pré-escolas.</p>
+                  <!-- <div class="post-actions"><a href="post-brincar-aprender.html" class="btn btn-sm btn-outline-primary">Ler mais</a></div> -->
+                </div>
+              </article>
+            </div>
+            <!-- post 4 -->
+            <div class="col-md-6">
+              <article class="post-card">
+                <img src="images/blog-4.jpg" alt="Reforço Escolar"/>
+                <div class="post-body">
+                  <div class="post-meta"><span><i class="fa fa-calendar"></i> 01 set 2025</span><span><i class="fa fa-user"></i> Projetos</span><span class="badge-cat">Reforço</span></div>
+                  <h5 class="post-title">Reforço escolar que funciona: o que aprendemos</h5>
+                  <p class="post-excerpt">Contraturno estruturado, grupos por nível e rotinas curtas elevam aprendizagem em leitura e matemática.</p>
+                  <!-- <div class="post-actions"><a href="post-reforco-funciona.html" class="btn btn-sm btn-outline-primary">Ler mais</a></div> -->
+                </div>
+              </article>
+            </div>
+          </div>
+
+  
+        </div>
+
+        <!-- sidebar -->
+        <aside class="col-lg-4 sidebar">
+          <div class="widget mb-4">
+            <h6 class="mb-2"><i class="fa fa-folder-open"></i> Categorias</h6>
+            <ul class="list-unstyled mb-0">
+              <li><a href="projeto-formacao-professores.html">Formação de Professores</a></li>
+              <li><a href="projeto-inclusao-digital.html">Inclusão Digital</a></li>
+              <li><a href="projeto-primeira-infancia.html">Primeira Infância</a></li>
+              <li><a href="projeto-reforco-escolar.html">Reforço Escolar</a></li>
+              <li><a href="transparencia.html">Transparência</a></li>
+            </ul>
+          </div>
+ 
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- footer -->
+  <footer id="contato" class="footer_section">
+    <div class="container">
+      <div class="row gy-4">
+        <div class="col-lg-4">
+          <h4 class="mb-3"><img src="images/logo-educacao-white.png" alt="" style="height: 42px" /></h4>
+          <p>Educação de qualidade para transformar o Brasil. Junte-se a nós.</p>
+          <div class="mt-3">
+            <a href="#" aria-label="Facebook"><img src="images/fb-icon.png" alt="Facebook" /></a>
+            <a href="#" class="ml-2" aria-label="Twitter"><img src="images/twitter-icon.png" alt="Twitter" /></a>
+            <a href="#" class="ml-2" aria-label="LinkedIn"><img src="images/linkedin-icon.png" alt="LinkedIn" /></a>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <h5>Contato</h5>
+          <ul class="list-unstyled">
+            <li>📍 <a href="contato.html">São Sebastião — DF</a></li>
+            <li>📞 (61) 0000-0000</li>
+            <li>✉️ <a href="mailto:contato@todospelaeducacao.org">contato@todospelaeducacao.org</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-4">
+          <h5>Receba novidades</h5>
+          <form class="form-inline" action="newsletter.php" method="post">
+            <div class="input-group">
+              <input type="email" class="form-control" name="email" placeholder="Seu e-mail" required />
+              <div class="input-group-append"><button class="btn btn-primary" type="submit">Assinar</button></div>
+            </div>
+            <small class="d-block mt-2">Fique por dentro dos projetos e eventos.</small>
+          </form>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div class="copyright_section">
+    <div class="container"><p class="m-0">© <span id="year"></span> Todos Pela Educação — Blog & Notícias.</p></div>
+  </div>
+
+  <script>
+    function openNav(){ document.getElementById('mySidenav').style.width = '100%'; }
+    function closeNav(){ document.getElementById('mySidenav').style.width = '0'; }
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <!-- basic -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- site metas -->
+    <title>Projeto Formação de Professores — Todos Pela Educação</title>
+    <meta
+      name="description"
+      content="Programa de formação continuada para educadores da Educação Infantil e Anos Iniciais: objetivos, trilhas, metodologia, cronograma, indicadores e como participar."
+    />
+    <meta
+      name="keywords"
+      content="formação de professores, desenvolvimento docente, educação infantil, anos iniciais, coordenadores pedagógicos, mentoria, práticas pedagógicas"
+    />
+    <meta name="author" content="Todos Pela Educação" />
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- style css -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Responsive-->
+    <link rel="stylesheet" href="css/responsive.css" />
+    <!-- fevicon -->
+    <link rel="icon" href="images/favicon.png" type="image/png" />
+    <!-- Scrollbar Custom CSS -->
+    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css" />
+    <!-- fonts/icons -->
+    <link
+      rel="stylesheet"
+      href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:400,600,700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- extras -->
+    <link rel="stylesheet" href="css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="css/owl.theme.default.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css"
+    />
+
+    <style>
+      :root {
+        --azul: #0b3b81;
+        --amarelo: #ffd100;
+        --bg-suave: #f7fbff;
+      }
+      .header_section {
+        background: var(--azul);
+      }
+      .hero-mini {
+        background: var(--azul) url("images/hero-formacao-professores.jpg")
+          center/cover no-repeat; /* TROQUE a imagem */
+        color: #fff;
+        padding: 90px 0;
+        position: relative;
+        text-align: center;
+      }
+      .hero-mini::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: rgba(11, 59, 129, 0.55);
+      }
+      .hero-mini .container {
+        position: relative;
+        z-index: 2;
+      }
+      .hero-mini h1 {
+        font-weight: 700;
+        margin-bottom: 8px;
+      }
+      .lead-muted {
+        color: #e7efff;
+        max-width: 880px;
+        margin: 0 auto;
+      }
+
+      .block {
+        padding: 60px 0;
+      }
+      .card-soft {
+        border: 1px solid #eef2f7;
+        border-radius: 16px;
+        padding: 22px;
+        background: #fff;
+        box-shadow: 0 6px 16px rgba(0, 0, 0, 0.04);
+        height: 100%;
+      }
+      .icon-badge {
+        width: 58px;
+        height: 58px;
+        border-radius: 14px;
+        display: grid;
+        place-items: center;
+        background: var(--azul);
+        color: var(--amarelo);
+      }
+      .list-check li {
+        margin-bottom: 8px;
+      }
+      .pillars .card-soft {
+        transition: 0.2s;
+      }
+      .pillars .card-soft:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 10px 24px rgba(0, 0, 0, 0.06);
+      }
+      .metric {
+        text-align: center;
+      }
+      .metric h2 {
+        font-weight: 700;
+        margin: 0;
+      }
+      .metric small {
+        color: #64748b;
+      }
+      .timeline {
+        position: relative;
+      }
+      .timeline::before {
+        content: "";
+        position: absolute;
+        left: calc(50% - 1px);
+        top: 0;
+        bottom: 0;
+        width: 2px;
+        background: #e5e9f2;
+      }
+      .t-item {
+        position: relative;
+        margin-bottom: 30px;
+      }
+      .t-item .bubble {
+        background: #fff;
+        border: 1px solid #eef2f7;
+        border-radius: 14px;
+        padding: 18px;
+        box-shadow: 0 6px 16px rgba(0, 0, 0, 0.04);
+      }
+      .t-item .dot {
+        width: 14px;
+        height: 14px;
+        background: var(--azul);
+        border-radius: 999px;
+        position: absolute;
+        left: calc(50% - 7px);
+        top: 10px;
+      }
+      .faq .card {
+        border-radius: 12px;
+        overflow: hidden;
+      }
+      .cta .btn {
+        min-width: 180px;
+      }
+    </style>
+
+    <!-- JSON-LD -->
+  </head>
+  <body>
+    <!-- header -->
+    <div class="header_section">
+      <div class="container-fluid">
+        <nav
+          class="navbar navbar-light justify-content-between navbar-expand-lg navbar-dark"
+        >
+          <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+              >&times;</a
+            >
+            <a href="index.html">Início</a>
+            <a href="sobre.html">Sobre</a>
+            <a href="projeto-inclusao-digital.html" class="active">Projetos</a>
+            <a href="transparencia.html">Transparência</a>
+            <a href="contato.html">Contato</a>
+                <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
+          </div>
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            onclick="openNav()"
+            aria-label="Abrir menu"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <a class="logo navbar-brand ml-2" href="index.html">
+            <img
+              src="images/logo-educacao.png"
+              alt="Logo Todos Pela Educação"
+            />
+          </a>
+
+          <div class="d-none d-lg-flex">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Início</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="blog.html">Blog/Notícias</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="sobre.html">Sobre</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="projeto-inclusao-digital.html">Projetos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="transparencia.html">Transparência</a>
+              </li>
+                  <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
+              <li class="nav-item">
+                <a class="btn btn-sm btn-primary ml-2" href="doacao.html"
+                  >Doe agora</a
+                >
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </div>
+
+    <!-- hero mini -->
+    <section class="hero-mini">
+      <div class="container">
+        <h1>Projeto Formação de Professores</h1>
+        <p class="lead lead-muted">
+          Trilhas de desenvolvimento docente com foco em práticas de sala de
+          aula, mentoria e cultura de colaboração.
+        </p>
+      </div>
+    </section>
+
+    <!-- Objetivos -->
+    <section class="block">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="card-soft h-100">
+              <div class="d-flex align-items-center mb-3">
+                <div class="icon-badge mr-3"><i class="fa fa-book"></i></div>
+                <h4 class="m-0">Base em Evidências</h4>
+              </div>
+              <p>
+                Formações alinhadas à BNCC e pesquisas em educação, priorizando
+                estratégias com maior efeito na aprendizagem.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card-soft h-100">
+              <div class="d-flex align-items-center mb-3">
+                <div class="icon-badge mr-3"><i class="fa fa-users"></i></div>
+                <h4 class="m-0">Mentoria e Prática</h4>
+              </div>
+              <p>
+                Observação de aulas, devolutivas formativas e planos de ação
+                individuais e de grupo.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card-soft h-100">
+              <div class="d-flex align-items-center mb-3">
+                <div class="icon-badge mr-3">
+                    <div class="icon-badge mr-3"><i class="fa fa-users"></i></div>
+                </div>
+                <h4 class="m-0">Monitoramento</h4>
+              </div>
+              <p>
+                Indicadores simples e úteis para acompanhar avanços de prática
+                pedagógica e resultados dos estudantes.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Trilhas/Módulos -->
+    <section class="block" style="background: var(--bg-suave)">
+      <div class="container">
+        <h3 class="text-center mb-4">Trilhas de formação</h3>
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-3">
+            <div class="card-soft h-100">
+              <h5>Gestão de Sala de Aula</h5>
+              <ul class="pl-3 list-check mb-0">
+                <li>Rotinas e combinados</li>
+                <li>Interações e clima</li>
+                <li>Engajamento ativo</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="card-soft h-100">
+              <h5>Alfabetização e Linguagens</h5>
+              <ul class="pl-3 list-check mb-0">
+                <li>Consciência fonológica</li>
+                <li>Leitura guiada/compartilhada</li>
+                <li>Produção de textos</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="card-soft h-100">
+              <h5>Matemática Significativa</h5>
+              <ul class="pl-3 list-check mb-0">
+                <li>Resolução de problemas</li>
+                <li>Representações e jogos</li>
+                <li>Avaliação formativa</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="card-soft h-100">
+              <h5>Planejamento e Registro</h5>
+              <ul class="pl-3 list-check mb-0">
+                <li>Planejamentos semanais</li>
+                <li>Rubricas e evidências</li>
+                <li>Portfólios e devolutivas</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Público-alvo e Metas -->
+    <section class="block">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6 mb-4 mb-lg-0">
+            <h3>Público-alvo</h3>
+            <p>
+              Professores e coordenadores pedagógicos da Educação Infantil e
+              Anos Iniciais (1º ao 5º ano) das redes públicas. Gestores
+              escolares participam de encontros de liderança.
+            </p>
+            <div class="row text-center mt-4">
+              <div class="col-4 metric">
+                <h2>1.200</h2>
+                <small>educadores</small>
+              </div>
+              <div class="col-4 metric">
+                <h2>80+</h2>
+                <small>escolas</small>
+              </div>
+              <div class="col-4 metric">
+                <h2>18</h2>
+                <small>meses</small>
+              </div>
+            </div>
+           
+          </div>
+          <div class="col-lg-6">
+            <div class="card-soft">
+              <h5 class="mb-2">Metas de Impacto</h5>
+              <ul class="list-check pl-3 mb-0">
+                <li>90% dos docentes com planos semanais consistentes.</li>
+                <li>70% de aumento em uso de avaliação formativa.</li>
+                <li>Redução de 20% na variação de práticas entre turmas.</li>
+                <li>
+                  Evolução de 15 p.p. em indicadores de leitura ao fim do ciclo.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Metodologia -->
+    <section class="block" style="background: var(--bg-suave)">
+      <div class="container">
+        <h3 class="text-center mb-4">Metodologia</h3>
+        <div class="row g-4">
+          <div class="col-md-6">
+            <div class="card-soft h-100">
+              <h5>Como fazemos</h5>
+              <p>
+                Encontros presenciais/online, comunidades de prática, observação
+                de aulas com roteiro, devolutivas e plano de ação orientado por
+                rubricas.
+              </p>
+              <ul class="pl-3 list-check mb-0">
+                <li>Ciclos mensais (2–3h) + mentorias</li>
+                <li>Materiais aplicáveis e exemplos de aula</li>
+                <li>Feedback rápido e objetivo</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card-soft h-100">
+              <h5>Indicadores</h5>
+              <ul class="pl-3 list-check">
+                <li>Assiduidade e engajamento</li>
+                <li>Evolução em rubricas de prática</li>
+                <li>Planejamentos e registros</li>
+                <li>Resultados de leitura e matemática</li>
+              </ul>
+              <small class="text-muted"
+                >Relatórios bimestrais e painel de monitoramento consolidam
+                evidências para decisões.</small
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Cronograma -->
+    <section class="block">
+      <div class="container">
+        <h3 class="text-center mb-4">Cronograma</h3>
+        <div class="timeline">
+          <div class="t-item row">
+            <div class="dot"></div>
+            <div class="col-md-6 col-lg-5">
+              <div class="bubble">
+                <strong>Fase 1 — Alinhamento (M1–M2)</strong>
+                <p>
+                  Diagnóstico, definição de metas e pactuação com equipes
+                  gestoras.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="t-item row">
+            <div class="dot"></div>
+            <div class="col-md-6 offset-md-6 col-lg-5 offset-lg-7">
+              <div class="bubble">
+                <strong>Fase 2 — Implementação (M3–M12)</strong>
+                <p>
+                  Trilhas, comunidades de prática, observações e devolutivas
+                  periódicas.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="t-item row">
+            <div class="dot"></div>
+            <div class="col-md-6 col-lg-5">
+              <div class="bubble">
+                <strong>Fase 3 — Consolidação (M13–M18)</strong>
+                <p>
+                  Mostras pedagógicas, sistematização de práticas e plano de
+                  continuidade.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Depoimentos -->
+    <section class="block" style="background: var(--bg-suave)">
+      <div class="container">
+        <h3 class="text-center mb-4">Relatos</h3>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="card-soft h-100">
+              <p>
+                “A mentoria transformou a forma como planejo e observo a
+                aprendizagem.”
+              </p>
+              <small><strong>Rafaela</strong> — Coordenadora</small>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card-soft h-100">
+              <p>
+                “As comunidades de prática nos deram repertório real para
+                aplicar no dia seguinte.”
+              </p>
+              <small><strong>Carlos</strong> — Professor 3º ano</small>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card-soft h-100">
+              <p>
+                “Com os indicadores, priorizamos o que mais impacta a sala de
+                aula.”
+              </p>
+              <small><strong>Tereza</strong> — Gestora</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="block faq">
+      <div class="container">
+        <h3 class="text-center mb-4">Perguntas frequentes</h3>
+        <div class="accordion" id="faq">
+          <div class="card mb-2">
+            <div class="card-header" id="q1">
+              <h6 class="mb-0">
+                <button
+                  class="btn btn-link"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#a1"
+                  aria-expanded="true"
+                  aria-controls="a1"
+                >
+                  Quem pode aderir?
+                </button>
+              </h6>
+            </div>
+            <div
+              id="a1"
+              class="collapse show"
+              aria-labelledby="q1"
+              data-parent="#faq"
+            >
+              <div class="card-body">
+                Redes municipais/estaduais e escolas parceiras. Prioridade para
+                contextos de maior vulnerabilidade.
+              </div>
+            </div>
+          </div>
+          <div class="card mb-2">
+            <div class="card-header" id="q2">
+              <h6 class="mb-0">
+                <button
+                  class="btn btn-link collapsed"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#a2"
+                  aria-expanded="false"
+                  aria-controls="a2"
+                >
+                  Qual a carga horária?
+                </button>
+              </h6>
+            </div>
+            <div
+              id="a2"
+              class="collapse"
+              aria-labelledby="q2"
+              data-parent="#faq"
+            >
+              <div class="card-body">
+                Ciclos mensais (2–3 horas), encontros bimestrais ampliados e
+                mentorias sob demanda.
+              </div>
+            </div>
+          </div>
+          <div class="card mb-2">
+            <div class="card-header" id="q3">
+              <h6 class="mb-0">
+                <button
+                  class="btn btn-link collapsed"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#a3"
+                  aria-expanded="false"
+                  aria-controls="a3"
+                >
+                  Há certificação?
+                </button>
+              </h6>
+            </div>
+            <div
+              id="a3"
+              class="collapse"
+              aria-labelledby="q3"
+              data-parent="#faq"
+            >
+              <div class="card-body">
+                Sim. Certificação mediante participação mínima, entrega de
+                registros e plano de ação.
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="text-center mt-4 cta">
+          <a href="doacao.html" class="btn btn-primary">Apoie este projeto</a>
+          <a href="contato.html" class="btn btn-outline-primary ml-2"
+            >Quero implementar</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contato" class="footer_section">
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-lg-4">
+            <h4 class="mb-3">
+              <img
+                src="images/logo-educacao-white.png"
+                alt=""
+                style="height: 42px"
+              />
+            </h4>
+            <p>
+              Educação de qualidade para transformar o Brasil. Junte-se a nós.
+            </p>
+            <div class="mt-3">
+              <a href="#" aria-label="Facebook"
+                ><img src="images/fb-icon.png" alt="Facebook"
+              /></a>
+              <a href="#" class="ml-2" aria-label="Twitter"
+                ><img src="images/twitter-icon.png" alt="Twitter"
+              /></a>
+              <a href="#" class="ml-2" aria-label="LinkedIn"
+                ><img src="images/linkedin-icon.png" alt="LinkedIn"
+              /></a>
+            </div>
+          </div>
+           <div class="col-lg-4">
+            <h5>Contato</h5>
+            <ul class="list-unstyled">
+              <li>📍 <a href="contato.html">São Sebastião — DF</a></li>
+              <li>📞 (61) 0000-0000</li>
+              <li>✉️ <a href="mailto:contato@todospelaeducacao.org">contato@todospelaeducacao.org</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-4">
+            <h5></h5>
+            <form class="form-inline" action="newsletter.php" method="post">
+              <div class="input-group">
+                <input
+                  type="email"
+                  class="form-control"
+                  name="email"
+                  placeholder="Seu e-mail"
+                  required
+                />
+                <div class="input-group-append">
+                  <button class="btn btn-primary" type="submit">Assinar</button>
+                </div>
+              </div>
+              <small class="d-block mt-2"
+                >Receba novidades, resultados e oportunidades de
+                voluntariado.</small
+              >
+            </form>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div class="copyright_section">
+      <div class="container">
+        <p class="m-0">
+          © <span id="year"></span> Todos Pela Educação — Projeto Formação de
+          Professores.
+        </p>
+      </div>
+    </div>
+
+    <!-- scripts -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.0.0.min.js"></script>
+    <script src="js/plugin.js"></script>
+    <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="js/owl.carousel.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+    <script src="https://unpkg.com/gijgo@1.9.13/js/gijgo.min.js"></script>
+    <script>
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "100%";
+      }
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+      }
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>

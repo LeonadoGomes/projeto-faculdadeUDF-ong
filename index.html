@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Todos Pela Educação</title>
+    <meta
+      name="description"
+      content="Movimento pela educação de qualidade para todas as crianças e jovens do Brasil."
+    />
+    <meta
+      name="keywords"
+      content="educação, voluntariado, doação, inclusão, projetos sociais"
+    />
+    <meta name="author" content="Todos Pela Educação" />
+
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+
+    <!-- style css -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+
+    <!-- favicon -->
+    <link rel="icon" href="images/favicon.png" type="image/png" />
+
+    <!-- extras -->
+    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:400,600,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="css/owl.theme.default.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css"
+    />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header_section">
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+          <button
+            class="navbar-toggler"
+            type="button"
+            onclick="openNav()"
+            aria-label="Abrir menu"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <a
+            class="navbar-brand ml-2"
+            href="index.html"
+            aria-label="Todos Pela Educação"
+          >
+            <img
+              src="images/logo-educacao.png"
+              alt="Logo Todos Pela Educação"
+            />
+          </a>
+
+          <div
+            class="collapse navbar-collapse justify-content-end d-none d-lg-flex"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="#projetos">Projetos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="blog.html">Blog/Notícias</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#como-ajudar">Como ajudar</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="transparencia.html">Transparência</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#sobreNos">Sobre nós</a>
+              </li>
+                   <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
+         
+              <li class="nav-item ml-lg-2">
+                <a class="btn btn-sm btn-primary" href="#doar">Doe agora</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+
+      <!-- Menu lateral (mobile) -->
+      <nav id="mySidenav" class="sidenav" aria-label="Menu lateral">
+        <a
+          href="javascript:void(0)"
+          class="closebtn"
+          onclick="closeNav()"
+          aria-label="Fechar menu"
+          >&times;</a
+        >
+        <a href="#projetos" onclick="closeNav()">Projetos</a>
+                <a class="nav-link" href="blog.html">Blog/Notícias</a>
+        <a href="#como-ajudar" onclick="closeNav()">Como ajudar</a>
+        <a href="transparencia.html" onclick="closeNav()">Transparência</a>
+        <a href="#sobreNos" onclick="closeNav()">Sobre nós</a>
+        <a href="#contato" onclick="closeNav()">Contato</a>
+      </nav>
+
+      <!-- Hero -->
+      <section class="hero">
+        <div class="container">
+          <h1>Educar é transformar o futuro do Brasil</h1>
+          <p>
+            Unimos educadores, famílias, governo e iniciativa privada para
+            garantir educação de qualidade para todas as crianças e jovens.
+          </p>
+          <div class="d-flex justify-content-center flex-wrap gap-2">
+            <a href="#doar" class="btn btn-primary mx-2 mb-2">Doe agora</a>
+            <a href="#projetos" class="btn btn-outline-light mx-2 mb-2"
+              >Conheça nossos projetos</a
+            >
+          </div>
+        </div>
+      </section>
+    </header>
+
+    <!-- Quem somos -->
+    <section class="py-5">
+      <div class="container">
+        <h2 class="section-title text-center">Quem somos</h2>
+        <p class="section-sub text-center">
+          Somos um movimento sem fins lucrativos comprometido em garantir o
+          direito à educação de qualidade, com foco em equidade, inovação e
+          transparência. Trabalhamos lado a lado com escolas, redes
+          municipais/estaduais e comunidades.
+        </p>
+      </div>
+       <p class="text-center mt-3">
+          <a
+            id="sobreNos"
+            class="btn btn-outline-primary"
+            href="sobre.html"
+            target="_blank"
+            rel="noopener"
+            >Sobre nós</a
+          >
+        </p>
+    </section>
+
+    <!-- Projetos -->
+    <section id="projetos" class="py-5">
+      <div class="container">
+        <h2 class="section-title text-center">Nossos projetos</h2>
+        <p class="section-sub text-center">
+          Iniciativas que geram impacto real em sala de aula e na comunidade.
+        </p>
+
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-3">
+            <article class="card-project">
+              <img
+                src="images/proj-primeira-infancia.jpg"
+                alt="Primeira infância"
+              />
+              <div class="p-3">
+                <h5>Primeira Infância</h5>
+                <p class="mb-3">
+                  Apoio a creches e formação de cuidadores para promover
+                  desenvolvimento integral de 0 a 6 anos.
+                </p>
+                <a
+                  class="btn btn-sm btn-outline-primary"
+                  href="projeto-primeira-infancia.html"
+                  >Saiba mais</a
+                >
+              </div>
+            </article>
+          </div>
+
+          <div class="col-md-6 col-lg-3">
+            <article class="card-project">
+              <img
+                src="images/proj-formacao-professores.jpg"
+                alt="Formação de professores"
+              />
+              <div class="p-3">
+                <h5>Formação de Professores</h5>
+                <p class="mb-3">
+                  Trilhas de capacitação continuada, materiais abertos e
+                  comunidades de prática.
+                </p>
+                <a
+                  class="btn btn-sm btn-outline-primary"
+                  href="projeto-formacao-professores.html"
+                  >Saiba mais</a
+                >
+              </div>
+            </article>
+          </div>
+
+          <div class="col-md-6 col-lg-3">
+            <article class="card-project">
+              <img
+                src="images/proj-inclusao-digital.jpg"
+                alt="Inclusão digital"
+              />
+              <div class="p-3">
+                <h5>Inclusão Digital</h5>
+                <p class="mb-3">
+                  Conectividade, laboratórios móveis e conteúdos digitais
+                  acessíveis para todos.
+                </p>
+                <a
+                  class="btn btn-sm btn-outline-primary"
+                  href="projeto-inclusao-digital.html"
+                  >Saiba mais</a
+                >
+              </div>
+            </article>
+          </div>
+
+          <div class="col-md-6 col-lg-3">
+            <article class="card-project">
+              <img
+                src="images/proj-reforco-escolar.jpg"
+                alt="Reforço escolar comunitário"
+              />
+              <div class="p-3">
+                <h5>Reforço Escolar</h5>
+                <p class="mb-3">
+                  Bibliotecas móveis, mentoria de estudos e apoio à leitura com
+                  a família.
+                </p>
+                <a
+                  class="btn btn-sm btn-outline-primary"
+                  href="projeto-reforco-escolar.html"
+                  >Saiba mais</a
+                >
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Impacto -->
+    <section id="impacto" class="impact">
+      <div class="container">
+        <h2 class="section-title text-center">Nosso impacto</h2>
+        <p class="section-sub text-center">
+          Transparência e resultados que movem a educação.
+        </p>
+
+        <div class="row g-4 mt-3">
+          <div class="col-6 col-md-3">
+            <div class="kpi">
+              <h3>15.000+</h3>
+              <span>Alunos beneficiados</span>
+            </div>
+          </div>
+          <div class="col-6 col-md-3">
+            <div class="kpi">
+              <h3>1.200+</h3>
+              <span>Professores formados</span>
+            </div>
+          </div>
+          <div class="col-6 col-md-3">
+            <div class="kpi">
+              <h3>320</h3>
+              <span>Escolas parceiras</span>
+            </div>
+          </div>
+          <div class="col-6 col-md-3">
+            <div class="kpi">
+              <h3>18</h3>
+              <span>Estados alcançados</span>
+            </div>
+          </div>
+        </div>
+    
+        </p>
+      </div>
+    </section>
+
+    <!-- Como ajudar -->
+    <section id="como-ajudar" class="py-5 cta-ways">
+      <div class="container">
+        <h2 class="section-title text-center">Como ajudar</h2>
+        <p class="section-sub text-center">
+          Três formas simples de ampliar nosso alcance.
+        </p>
+
+        <div class="row g-4">
+          <div class="col-md-6">
+            <div class="box">
+              <div class="icon"><i class="fa fa-heart"></i></div>
+              <div>
+                <h5>Doe agora</h5>
+                <p class="mb-2">
+                  Sua doação financia projetos e materiais didáticos.
+                </p>
+                <a id="doar" href="doacao.html" class="btn btn-sm btn-primary"
+                  >Doar</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="box">
+              <div class="icon"><i class="fa fa-users"></i></div>
+              <div>
+                <h5>Seja voluntário</h5>
+                <p class="mb-2">
+                  Compartilhe seu tempo e conhecimento com alunos e professores.
+                </p>
+                <a
+                  href="voluntariado.html"
+                  class="btn btn-sm btn-outline-primary"
+                  >Quero ajudar</a
+                >
+              </div>
+            </div>
+          </div>
+       
+        </div>
+      </div>
+    </section>
+
+    <!-- Notícias -->
+    <section class="py-5 news">
+      <div class="container">
+        <h2 class="section-title text-center">Notícias e histórias</h2>
+        <p class="section-sub text-center">
+          Conheça conquistas recentes e relatos inspiradores.
+        </p>
+
+        <div class="row g-4">
+          <div class="col-md-4">
+            <article class="card h-100">
+              <img
+                src="images/noticia-1.jpg"
+                class="card-img-top"
+                alt="Projeto de leitura"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Leitura transforma comunidade</h5>
+                <p class="card-text">
+                  Com biblioteca móvel, participação dos alunos cresceu 48% nas
+                  oficinas de leitura.
+                </p>
+                <!-- <a
+                  href="noticia-leitura.html"
+                  class="btn btn-sm btn-outline-primary"
+                  >Ler mais</a
+                > -->
+              </div>
+            </article>
+          </div>
+          <div class="col-md-4">
+            <article class="card h-100">
+              <img
+                src="images/noticia-2.jpg"
+                class="card-img-top"
+                alt="Conectividade escolar"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Conectividade escolar</h5>
+                <p class="card-text">
+                  Parceria garante internet gratuita para escolas rurais de três
+                  municípios.
+                </p>
+                <!-- <a
+                  href="noticia-conectividade.html"
+                  class="btn btn-sm btn-outline-primary"
+                  >Ler mais</a
+                > -->
+              </div>
+            </article>
+          </div>
+          <div class="col-md-4">
+            <article class="card h-100">
+              <img
+                src="images/noticia-3.jpg"
+                class="card-img-top"
+                alt="Formação de professores"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Formação continuada</h5>
+                <p class="card-text">
+                  Mais 250 docentes certificados nas trilhas de alfabetização e
+                  letramento.
+                </p>
+                <!-- <a
+                  href="noticia-formacao.html"
+                  class="btn btn-sm btn-outline-primary"
+                  >Ler mais</a
+                > -->
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Depoimentos -->
+    <section class="py-5">
+      <div class="container">
+        <h2 class="section-title text-center">Depoimentos</h2>
+        <p class="section-sub text-center">
+          Vozes de quem vive a transformação.
+        </p>
+
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="depo">
+              <p>
+                “Graças ao reforço escolar, meus alunos ganharam confiança para
+                ler em voz alta.”
+              </p>
+              <small>— Profª. Maria, Recife/PE</small>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="depo">
+              <p>
+                “Os cursos de formação mudaram minha prática de sala de aula.”
+              </p>
+              <small>— Prof. Jonas, Manaus/AM</small>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="depo">
+              <p>
+                “Meu filho voltou a gostar da escola com as oficinas de
+                leitura.”
+              </p>
+              <small>— Joana, mãe do Lucas</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contato" class="footer_section">
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-lg-4">
+            <h4 class="mb-3">
+              <img
+                src="images/logo-educacao-white.png"
+                alt=""
+                style="height: 42px"
+              />
+            </h4>
+            <p>
+              Educação de qualidade para transformar o Brasil. Junte-se a nós.
+            </p>
+            <div class="mt-3">
+              <a href="#" aria-label="Facebook"
+                ><img src="images/fb-icon.png" alt="Facebook"
+              /></a>
+              <a href="#" class="ml-2" aria-label="Twitter"
+                ><img src="images/twitter-icon.png" alt="Twitter"
+              /></a>
+              <a href="#" class="ml-2" aria-label="LinkedIn"
+                ><img src="images/linkedin-icon.png" alt="LinkedIn"
+              /></a>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <h5>Contato</h5>
+            <ul class="list-unstyled">
+              <li>📍 <a href="contato.html">São Sebastião — DF</a></li>
+              <li>📞 (61) 0000-0000</li>
+              <li>✉️ <a href="mailto:contato@todospelaeducacao.org">contato@todospelaeducacao.org</a></li>
+            </ul>
+          </div>
+
+
+          <div class="col-lg-4">
+            <h5></h5>
+            <form class="form-inline" action="newsletter.php" method="post">
+              <div class="input-group">
+                <input
+                  type="email"
+                  class="form-control"
+                  name="email"
+                  placeholder="Seu e-mail"
+                  required
+                />
+                <div class="input-group-append">
+                  <button class="btn btn-primary" type="submit">Assinar</button>
+                </div>
+              </div>
+              <small class="d-block mt-2"
+                >Receba novidades, resultados e oportunidades de
+                voluntariado.</small
+              >
+            </form>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div class="copyright_section">
+      <div class="container">
+        <p class="m-0">
+          © <span id="year"></span> Todos Pela Educação — Transparência e
+          impacto.
+        </p>
+      </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/plugin.js"></script>
+    <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="js/owl.carousel.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+    <script src="https://unpkg.com/gijgo@1.9.13/js/gijgo.min.js"></script>
+
+    <script>
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "100%";
+      }
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+      }
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>

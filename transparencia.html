@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Transparência — Todos Pela Educação</title>
+    <meta
+      name="description"
+      content="Relatórios anuais, auditorias independentes, demonstrativos financeiros, governança e resultados dos projetos da ONG Todos Pela Educação."
+    />
+    <meta
+      name="keywords"
+      content="transparência, prestação de contas, auditoria, relatórios, governança, demonstrativos financeiros, LGPD"
+    />
+    <meta name="author" content="Todos Pela Educação" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <link rel="icon" href="images/favicon.png" type="image/png" />
+    <link
+      rel="stylesheet"
+      href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:400,600,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      :root {
+        --azul: #0b3b81;
+        --amarelo: #ffd100;
+        --bg-suave: #f7fbff;
+      }
+      body {
+        font-family: "Poppins", sans-serif;
+      }
+      .header_section {
+        background: var(--azul);
+      }
+      .hero-mini {
+        background: var(--azul) url("images/hero-transparencia.jpg")
+          center/cover no-repeat;
+        color: #fff;
+        padding: 90px 0;
+        position: relative;
+        text-align: center;
+      }
+      .hero-mini::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: rgba(11, 59, 129, 0.55);
+      }
+      .hero-mini .container {
+        position: relative;
+        z-index: 2;
+      }
+      .hero-mini h1 {
+        font-weight: 700;
+        margin-bottom: 8px;
+      }
+      .lead-muted {
+        color: #e7efff;
+        max-width: 880px;
+        margin: 0 auto;
+      }
+
+      .block {
+        padding: 56px 0;
+      }
+      .card-soft {
+        border: 1px solid #eef2f7;
+        border-radius: 16px;
+        padding: 22px;
+        background: #fff;
+        box-shadow: 0 6px 16px rgba(0, 0, 0, 0.04);
+        height: 100%;
+      }
+      .icon-badge {
+        width: 58px;
+        height: 58px;
+        border-radius: 14px;
+        display: grid;
+        place-items: center;
+        background: var(--azul);
+        color: var(--amarelo);
+      }
+      .list-check li {
+        margin-bottom: 8px;
+      }
+      .badge-year {
+        background: #eef2f7;
+        color: #0b3b81;
+        border-radius: 999px;
+        padding: 4px 10px;
+        font-size: 0.85rem;
+      }
+      .table thead th {
+        border-top: 0;
+        background: #f8fafc;
+      }
+      .download a {
+        text-decoration: none;
+      }
+      .faq .card {
+        border-radius: 12px;
+        overflow: hidden;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- header -->
+    <div class="header_section">
+      <div class="container-fluid">
+        <nav
+          class="navbar navbar-light justify-content-between navbar-expand-lg navbar-dark"
+        >
+          <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+              >&times;</a
+            >
+            <a href="index.html">Início</a>
+            <a href="sobre.html">Sobre</a>
+            <a href="blog.html">Blog/Notícias</a>
+            <a href="projeto-primeira-infancia.html">Projetos</a>
+            <a href="doacao.html">Doações</a>
+            <a href="transparencia.html" class="active">Transparência</a>
+            <a href="contato.html">Contato</a>
+          </div>
+          <button
+            class="navbar-toggler"
+            type="button"
+            onclick="openNav()"
+            aria-label="Abrir menu"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <a class="logo navbar-brand ml-2" href="index.html">
+            <img
+              src="images/logo-educacao.png"
+              alt="Logo Todos Pela Educação"
+            />
+          </a>
+          <div class="d-none d-lg-flex">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Início</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="blog.html">Blog/Notícias</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="sobre.html">Sobre</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="projeto-primeira-infancia.html"
+                  >Projetos</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="doacao.html">Doações</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="transparencia.html"
+                  >Transparência</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contato.html">Contato</a>
+              </li>
+              <li class="nav-item">
+                <a class="btn btn-sm btn-primary ml-2" href="doacao.html"
+                  >Doe agora</a
+                >
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </div>
+
+    <!-- hero mini -->
+    <section class="hero-mini">
+      <div class="container">
+        <h1>Transparência</h1>
+        <p class="lead lead-muted">
+          Prestação de contas, governança e resultados. Aqui você encontra
+          dados, documentos e indicadores atualizados.
+        </p>
+      </div>
+    </section>
+
+    <!-- Atalhos rápidos -->
+    <section class="block" style="background: var(--bg-suave)">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="card-soft h-100">
+              <div class="d-flex align-items-center mb-2">
+                <div class="icon-badge mr-3">
+                  <i class="fa fa-calendar"></i>
+                </div>
+                <h5 class="m-0">Relatórios Anuais</h5>
+              </div>
+              <p>Resultados, projetos e uso de recursos por ano.</p>
+              <a class="btn btn-sm btn-outline-primary" href="#relatorios"
+                >Ver relatórios</a
+              >
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card-soft h-100">
+              <div class="d-flex align-items-center mb-2">
+                <div class="icon-badge mr-3"><i class="fa fa-shield"></i></div>
+                <h5 class="m-0">Auditorias</h5>
+              </div>
+              <p>Auditorias independentes e pareceres do conselho fiscal.</p>
+              <a class="btn btn-sm btn-outline-primary" href="#auditorias"
+                >Ver auditorias</a
+              >
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card-soft h-100">
+              <div class="d-flex align-items-center mb-2">
+                <div class="icon-badge mr-3">
+                  <i class="fa fa-bullseye"></i>
+                </div>
+
+                <h5 class="m-0">Indicadores</h5>
+              </div>
+              <p>Métricas de impacto e eficiência dos projetos.</p>
+              <a class="btn btn-sm btn-outline-primary" href="#indicadores"
+                >Ver indicadores</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Demonstrativos Financeiros -->
+    <section class="block" style="background: var(--bg-suave)">
+      <div class="container">
+        <h3 class="mb-3">Demonstrativos Financeiros</h3>
+        <div class="card-soft">
+          <div class="table-responsive">
+            <table class="table mb-0">
+              <thead>
+                <tr>
+                  <th>Ano</th>
+                  <th>Receitas</th>
+                  <th>Despesas</th>
+                  <th>Resultado</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>2024</td>
+                  <td>R$ 8.420.000</td>
+                  <td>R$ 8.130.000</td>
+                  <td>R$ 290.000</td>
+                </tr>
+                <tr>
+                  <td>2023</td>
+                  <td>R$ 7.980.000</td>
+                  <td>R$ 7.750.000</td>
+                  <td>R$ 230.000</td>
+                </tr>
+                <tr>
+                  <td>2022</td>
+                  <td>R$ 7.120.000</td>
+                  <td>R$ 6.980.000</td>
+                  <td>R$ 140.000</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Indicadores de Impacto -->
+    <section class="block" id="indicadores">
+      <div class="container">
+        <h3 class="mb-3">Indicadores de Impacto</h3>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="card-soft text-center h-100">
+              <div class="icon-badge mx-auto mb-2">
+                <i class="fa fa-user"></i>
+              </div>
+
+              <h5>Formação de Professores</h5>
+              <p class="mb-1"><strong>1.200</strong> educadores formados</p>
+              <small class="text-muted">Taxa média de presença: 82%</small>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card-soft text-center h-100">
+              <div class="icon-badge mx-auto mb-2">
+                <i class="fa fa-book"></i>
+              </div>
+              <h5>Alfabetização</h5>
+              <p class="mb-1"><strong>+15 p.p.</strong> em fluência leitora</p>
+              <small class="text-muted"
+                >Em turmas participantes (12 meses)</small
+              >
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card-soft text-center h-100">
+              <div class="icon-badge mx-auto mb-2">
+                <i class="fa fa-laptop"></i>
+              </div>
+              <h5>Inclusão Digital</h5>
+              <p class="mb-1">
+                <strong>600</strong> docentes com uso pedagógico de TIC
+              </p>
+              <small class="text-muted">Dados agregados do ciclo atual</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Canal de Integridade -->
+    <section class="block" style="background: var(--bg-suave)">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-7 mb-3 mb-lg-0">
+            <h3>Canal de Integridade</h3>
+            <p>
+              Recebemos relatos de forma confidencial sobre condutas
+              incompatíveis com nossas políticas. As manifestações são
+              analisadas por comitê independente.
+            </p>
+            <ul class="list-check pl-3">
+              <li>Denúncias de fraudes, assédio ou conflitos de interesse</li>
+              <li>Proteção ao denunciante</li>
+              <li>Prazo de resposta com acompanhamento</li>
+            </ul>
+          </div>
+          <div class="col-lg-5">
+            <div class="card-soft">
+              <h6 class="mb-2"><i class="fa fa-envelope-o"></i> Contatos</h6>
+              <p class="mb-2">
+                E-mail:
+                <a href="mailto:integridade@todospelaeducacao.org"
+                  >integridade@todospelaeducacao.org</a
+                >
+              </p>
+             
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="block faq">
+      <div class="container">
+        <h3 class="text-center mb-4">Perguntas frequentes</h3>
+        <div class="accordion" id="faq">
+          <div class="card mb-2">
+            <div class="card-header" id="q1">
+              <h6 class="mb-0">
+                <button
+                  class="btn btn-link"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#a1"
+                  aria-expanded="true"
+                  aria-controls="a1"
+                >
+                  Com que frequência publicam os relatórios?
+                </button>
+              </h6>
+            </div>
+            <div
+              id="a1"
+              class="collapse show"
+              aria-labelledby="q1"
+              data-parent="#faq"
+            >
+              <div class="card-body">
+                Relatórios anuais são publicados até o 1º trimestre do ano
+                seguinte, com dados consolidados e auditoria independente.
+              </div>
+            </div>
+          </div>
+          <div class="card mb-2">
+            <div class="card-header" id="q2">
+              <h6 class="mb-0">
+                <button
+                  class="btn btn-link collapsed"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#a2"
+                  aria-expanded="false"
+                  aria-controls="a2"
+                >
+                  Os dados financeiros incluem projetos financiados por
+                  parceiros?
+                </button>
+              </h6>
+            </div>
+            <div
+              id="a2"
+              class="collapse"
+              aria-labelledby="q2"
+              data-parent="#faq"
+            >
+              <div class="card-body">
+                Sim. Demonstramos receitas e despesas por natureza e, quando
+                aplicável, detalhamos por projeto/parceiro.
+              </div>
+            </div>
+          </div>
+          <div class="card mb-2">
+            <div class="card-header" id="q3">
+              <h6 class="mb-0">
+                <button
+                  class="btn btn-link collapsed"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#a3"
+                  aria-expanded="false"
+                  aria-controls="a3"
+                >
+                  Posso solicitar documentos adicionais?
+                </button>
+              </h6>
+            </div>
+            <div
+              id="a3"
+              class="collapse"
+              aria-labelledby="q3"
+              data-parent="#faq"
+            >
+              <div class="card-body">
+                Claro. Envie sua solicitação via
+                <a href="contato.html">contato</a> informando o período e o tipo
+                de documento desejado.
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="text-center mt-4 cta">
+          
+          <a href="doacao.html" class="btn btn-outline-primary ml-2"
+            >Quero apoiar</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contato" class="footer_section">
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-lg-4">
+            <h4 class="mb-3">
+              <img
+                src="images/logo-educacao-white.png"
+                alt=""
+                style="height: 42px"
+              />
+            </h4>
+            <p>
+              Educação de qualidade para transformar o Brasil. Junte-se a nós.
+            </p>
+            <div class="mt-3">
+              <a href="#" aria-label="Facebook"
+                ><img src="images/fb-icon.png" alt="Facebook"
+              /></a>
+              <a href="#" class="ml-2" aria-label="Twitter"
+                ><img src="images/twitter-icon.png" alt="Twitter"
+              /></a>
+              <a href="#" class="ml-2" aria-label="LinkedIn"
+                ><img src="images/linkedin-icon.png" alt="LinkedIn"
+              /></a>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <h5>Contato</h5>
+            <ul class="list-unstyled">
+              <li>📍 Endereço da ONG</li>
+              <li>📞 (00) 0000-0000</li>
+              <li>✉️ contato@todospelaeducacao.org</li>
+            </ul>
+          </div>
+          <div class="col-lg-4">
+            <h5></h5>
+            <form class="form-inline" action="newsletter.php" method="post">
+              <div class="input-group">
+                <input
+                  type="email"
+                  class="form-control"
+                  name="email"
+                  placeholder="Seu e-mail"
+                  required
+                />
+                <div class="input-group-append">
+                  <button class="btn btn-primary" type="submit">Assinar</button>
+                </div>
+              </div>
+              <small class="d-block mt-2"
+                >Receba novidades, resultados e oportunidades de
+                voluntariado.</small
+              >
+            </form>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div class="copyright_section">
+      <div class="container">
+        <p class="m-0">
+          © <span id="year"></span> Todos Pela Educação — Transparência.
+        </p>
+      </div>
+    </div>
+
+    <!-- scripts -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.0.0.min.js"></script>
+    <script src="js/plugin.js"></script>
+    <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="js/owl.carousel.js"></script>
+    <script>
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "100%";
+      }
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+      }
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>

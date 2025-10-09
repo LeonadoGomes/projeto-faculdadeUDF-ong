@@ -1,0 +1,766 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <!-- basic -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- site metas -->
+    <title>Projeto Primeira Infância — Todos Pela Educação</title>
+    <meta
+      name="description"
+      content="Conheça o Projeto Primeira Infância: objetivos, pilares, metodologia, metas, indicadores, territórios e como participar."
+    />
+    <meta
+      name="keywords"
+      content="primeira infância, educação infantil, alfabetização, desenvolvimento infantil, formação de professores, família e escola"
+    />
+    <meta name="author" content="Todos Pela Educação" />
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- style css -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Responsive-->
+    <link rel="stylesheet" href="css/responsive.css" />
+    <!-- fevicon -->
+    <link rel="icon" href="images/favicon.png" type="image/png" />
+    <!-- Scrollbar Custom CSS -->
+    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css" />
+    <!-- fonts/icons -->
+    <link
+      rel="stylesheet"
+      href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:400,600,700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- extras -->
+    <link rel="stylesheet" href="css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="css/owl.theme.default.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css"
+    />
+
+    <style>
+      /* Tema da página Projeto */
+      :root {
+        --azul: #0b3b81;
+        --amarelo: #ffd100;
+        --bg-suave: #f7fbff;
+      }
+      .header_section {
+        background: var(--azul);
+      }
+      .hero-mini {
+        background: var(--azul) url("images/hero-primeira-infancia.jpg")
+          center/cover no-repeat; /* TROQUE a imagem */
+        color: #fff;
+        padding: 90px 0;
+        position: relative;
+        text-align: center;
+      }
+      .hero-mini::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: rgba(11, 59, 129, 0.55);
+      }
+      .hero-mini .container {
+        position: relative;
+        z-index: 2;
+      }
+      .hero-mini h1 {
+        font-weight: 700;
+        margin-bottom: 8px;
+      }
+      .lead-muted {
+        color: #e7efff;
+        max-width: 880px;
+        margin: 0 auto;
+      }
+
+      .block {
+        padding: 60px 0;
+      }
+      .card-soft {
+        border: 1px solid #eef2f7;
+        border-radius: 16px;
+        padding: 22px;
+        background: #fff;
+        box-shadow: 0 6px 16px rgba(0, 0, 0, 0.04);
+        height: 100%;
+      }
+      .icon-badge {
+        width: 58px;
+        height: 58px;
+        border-radius: 14px;
+        display: grid;
+        place-items: center;
+        background: var(--azul);
+        color: var(--amarelo);
+      }
+      .list-check li {
+        margin-bottom: 8px;
+      }
+      .pillars .card-soft {
+        transition: 0.2s;
+      }
+      .pillars .card-soft:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 10px 24px rgba(0, 0, 0, 0.06);
+      }
+      .metric {
+        text-align: center;
+      }
+      .metric h2 {
+        font-weight: 700;
+        margin: 0;
+      }
+      .metric small {
+        color: #64748b;
+      }
+      .timeline {
+        position: relative;
+      }
+      .timeline::before {
+        content: "";
+        position: absolute;
+        left: calc(50% - 1px);
+        top: 0;
+        bottom: 0;
+        width: 2px;
+        background: #e5e9f2;
+      }
+      .t-item {
+        position: relative;
+        margin-bottom: 30px;
+      }
+      .t-item .bubble {
+        background: #fff;
+        border: 1px solid #eef2f7;
+        border-radius: 14px;
+        padding: 18px;
+        box-shadow: 0 6px 16px rgba(0, 0, 0, 0.04);
+      }
+      .t-item .dot {
+        width: 14px;
+        height: 14px;
+        background: var(--azul);
+        border-radius: 999px;
+        position: absolute;
+        left: calc(50% - 7px);
+        top: 10px;
+      }
+      .partners img {
+        height: 44px;
+        object-fit: contain;
+        filter: grayscale(1);
+        opacity: 0.85;
+        transition: 0.2s;
+      }
+      .partners img:hover {
+        filter: none;
+        opacity: 1;
+      }
+      .faq .card {
+        border-radius: 12px;
+        overflow: hidden;
+      }
+      .cta .btn {
+        min-width: 180px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- header -->
+    <div class="header_section">
+      <div class="container-fluid">
+        <nav
+          class="navbar navbar-light justify-content-between navbar-expand-lg navbar-dark"
+        >
+          <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+              >&times;</a
+            >
+            <a href="index.html">Início</a>
+            <a class="nav-link" href="blog.html">Blog/Notícias</a>
+            <a href="sobre.html">Sobre</a>
+            <a href="projeto-formacao-professores.html" class="active"
+              >Projetos</a
+            >
+            <a href="transparencia.html">Transparência</a>
+            <a href="contato.html">Contato</a>
+          </div>
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            onclick="openNav()"
+            aria-label="Abrir menu"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <a class="logo navbar-brand ml-2" href="index.html">
+            <img
+              src="images/logo-educacao.png"
+              alt="Logo Todos Pela Educação"
+            />
+          </a>
+
+          <div class="d-none d-lg-flex">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Início</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="blog.html">Blog/Notícias</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="sobre.html">Sobre</a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  href="projeto-formacao-professores.html"
+                  >Projetos</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="transparencia.html">Transparência</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contato.html">Contato</a>
+              </li>
+              <li class="nav-item">
+                <a class="btn btn-sm btn-primary ml-2" href="doacao.html"
+                  >Doe agora</a
+                >
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </div>
+
+    <!-- hero mini -->
+    <section class="hero-mini">
+      <div class="container">
+        <h1>Projeto Primeira Infância</h1>
+        <p class="lead lead-muted">
+          Cuidar, brincar e aprender: desenvolvimento integral de 0 a 6 anos com
+          escolas fortalecidas e famílias engajadas.
+        </p>
+      </div>
+    </section>
+
+    <!-- Objetivos-chave -->
+    <section class="block">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="card-soft h-100">
+              <div class="d-flex align-items-center mb-3">
+                <div class="icon-badge mr-3"><i class="fa fa-book"></i></div>
+                <h4 class="m-0">Aprendizagem</h4>
+              </div>
+              <p>
+                Garantir experiências de linguagem, matemática, artes e
+                exploração do mundo adequadas à idade, com foco em interação e
+                brincadeira.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card-soft h-100">
+              <div class="d-flex align-items-center mb-3">
+                <div class="icon-badge mr-3"><i class="fa fa-users"></i></div>
+                <h4 class="m-0">Família e Comunidade</h4>
+              </div>
+              <p>
+                Fortalecer a participação das famílias, ampliando redes de
+                proteção e o vínculo escola–território para o bem-estar das
+                crianças.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card-soft h-100">
+              <div class="d-flex align-items-center mb-3">
+                <div class="icon-badge mr-3"><i class="fa fa-cogs"></i></div>
+                <h4 class="m-0">Gestão e Evidências</h4>
+              </div>
+              <p>
+                Apoiar gestores e equipes com formação contínua, instrumentos de
+                acompanhamento e tomada de decisão baseada em dados.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pilares do Projeto -->
+    <section class="block pillars" style="background: var(--bg-suave)">
+      <div class="container">
+        <h3 class="mb-4 text-center">Pilares</h3>
+        <div class="row g-4 align-items-stretch">
+          <div class="col-md-6 col-lg-3">
+            <div class="card-soft h-100">
+              <h5>Formação Docente</h5>
+              <ul class="list-check pl-3 mb-0">
+                <li>Práticas lúdicas e intencionais</li>
+                <li>Observação e registro das aprendizagens</li>
+                <li>Planejamento por campos de experiência</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="card-soft h-100">
+              <h5>Ambientes de Qualidade</h5>
+              <ul class="list-check pl-3 mb-0">
+                <li>Organização do espaço e materiais</li>
+                <li>Rotinas acolhedoras e seguras</li>
+                <li>Brincadeiras ao ar livre e movimento</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="card-soft h-100">
+              <h5>Famílias Presentes</h5>
+              <ul class="list-check pl-3 mb-0">
+                <li>Encontros e oficinas parentais</li>
+                <li>Guias de atividades em casa</li>
+                <li>Busca ativa e frequência</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="card-soft h-100">
+              <h5>Gestão e Monitoramento</h5>
+              <ul class="list-check pl-3 mb-0">
+                <li>Indicadores de acesso e qualidade</li>
+                <li>Planos de ação por unidade</li>
+                <li>Avaliação de processo e resultados</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Público-alvo e Metas -->
+    <section class="block">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6 mb-4 mb-lg-0">
+            <h3>Público-alvo</h3>
+            <p>
+              Crianças de <strong>0 a 6 anos</strong> matriculadas em creches e
+              pré-escolas públicas, suas famílias e profissionais da Educação
+              Infantil (professores, coordenadores e gestores escolares e
+              municipais).
+            </p>
+            <div class="row text-center mt-4">
+              <div class="col-4 metric">
+                <h2>150+</h2>
+                <small>unidades atendidas*</small>
+              </div>
+              <div class="col-4 metric">
+                <h2>12 mil</h2>
+                <small>crianças</small>
+              </div>
+              <div class="col-4 metric">
+                <h2>900</h2>
+                <small>educadores</small>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="card-soft">
+              <h5 class="mb-2">Metas 2025–2026</h5>
+              <ul class="list-check pl-3 mb-0">
+                <li>
+                  Ampliar em 20% a frequência média das crianças de 4–5 anos.
+                </li>
+                <li>
+                  Garantir 80% das turmas com planejamento semanal por campos de
+                  experiência.
+                </li>
+                <li>
+                  Formar 100% dos docentes em práticas lúdicas e avaliação
+                  formativa.
+                </li>
+                <li>
+                  Disponibilizar kits pedagógicos essenciais a todas as unidades
+                  participantes.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Metodologia -->
+    <section class="block" style="background: var(--bg-suave)">
+      <div class="container">
+        <h3 class="text-center mb-4">Metodologia</h3>
+        <div class="row g-4">
+          <div class="col-md-6">
+            <div class="card-soft h-100">
+              <h5>Como fazemos</h5>
+              <p>
+                Encontros presenciais e online, mentorias para coordenadores,
+                observação em sala, devolutivas formativas e materiais de apoio.
+                Acompanhamento com instrumentos simples e úteis ao professor.
+              </p>
+              <ul class="pl-3 mb-0 list-check">
+                <li>Ciclos bimestrais de formação</li>
+                <li>Rodas com famílias e agentes do território</li>
+                <li>Planos de ação com metas por unidade</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card-soft h-100">
+              <h5>Indicadores</h5>
+              <ul class="pl-3 list-check">
+                <li>Acesso e frequência</li>
+                <li>Qualidade das interações adulto-criança</li>
+                <li>Planejamento e registro pedagógico</li>
+                <li>Participação familiar</li>
+                <li>Ambiência e segurança</li>
+              </ul>
+              <small class="text-muted"
+                >Relatórios periódicos e painel de monitoramento consolidam
+                evidências para decisões.</small
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Cronograma (linha do tempo) -->
+    <section class="block">
+      <div class="container">
+        <h3 class="text-center mb-4">Cronograma</h3>
+        <div class="timeline">
+          <div class="t-item row">
+            <div class="dot"></div>
+            <div class="col-md-6 offset-md-0 col-lg-5">
+              <div class="bubble">
+                <strong>Fase 1 — Diagnóstico (M1–M2)</strong>
+                <p>
+                  Mapeamento das unidades, escuta com equipes e famílias,
+                  definição de metas locais.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="t-item row">
+            <div class="dot"></div>
+            <div class="col-md-6 offset-md-6 col-lg-5 offset-lg-7">
+              <div class="bubble">
+                <strong>Fase 2 — Formação e Implementação (M3–M10)</strong>
+                <p>
+                  Ciclos formativos, mentorias, ambientação e entrega de
+                  materiais pedagógicos.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="t-item row">
+            <div class="dot"></div>
+            <div class="col-md-6 col-lg-5">
+              <div class="bubble">
+                <strong>Fase 3 — Consolidação (M11–M12)</strong>
+                <p>
+                  Mostras pedagógicas, sistematização de boas práticas e plano
+                  de continuidade.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Territórios e Parceiros -->
+    <!-- <section class="block" style="background: var(--bg-suave)">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6 mb-4 mb-lg-0">
+            <h3>Territórios</h3>
+            <p>
+              Atuação em redes municipais com prioridade para contextos de maior
+              vulnerabilidade social. Expansão gradual conforme capacidade
+              técnica, parcerias e sustentabilidade financeira.
+            </p>
+            <ul class="pl-3 list-check">
+              <li>Seleção por indicadores de acesso/qualidade</li>
+              <li>Adesão de gestores e equipes</li>
+              <li>Cooperação com assistência social e saúde</li>
+            </ul>
+          </div>
+          <div class="col-lg-6 partners">
+            <h5 class="mb-3">Parceiros</h5>
+            <div class="row text-center align-items-center">
+              <div class="col-6 col-md-4 mb-3">
+                <img src="images/partner-1.png" alt="Parceiro 1" />
+              </div>
+              <div class="col-6 col-md-4 mb-3">
+                <img src="images/partner-2.png" alt="Parceiro 2" />
+              </div>
+              <div class="col-6 col-md-4 mb-3">
+                <img src="images/partner-3.png" alt="Parceiro 3" />
+              </div>
+            </div>
+            <small class="text-muted d-block"
+              >Logotipos meramente ilustrativos — substitua pelos parceiros
+              reais.</small
+            >
+          </div>
+        </div>
+      </div>
+    </section> -->
+
+    <!-- Depoimentos (opcional) -->
+    <section class="block">
+      <div class="container">
+        <h3 class="text-center mb-4">Vozes da comunidade</h3>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="card-soft h-100">
+              <p>
+                “As formações mudaram nossa rotina com as crianças. Brincar
+                ganhou intencionalidade e os registros ficaram mais fáceis.”
+              </p>
+              <small><strong>Ana Paula</strong> — Professora de EI</small>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card-soft h-100">
+              <p>
+                “Senti acolhimento como mãe e aprendi atividades simples para
+                fazer em casa. Meu filho está mais curioso e falante.”
+              </p>
+              <small><strong>Jéssica</strong> — Mãe</small>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card-soft h-100">
+              <p>
+                “O painel de indicadores nos ajudou a priorizar ações e apoiar
+                melhor cada unidade.”
+              </p>
+              <small><strong>Marcos</strong> — Gestor Municipal</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ específica do projeto -->
+    <section class="block faq" style="background: var(--bg-suave)">
+      <div class="container">
+        <h3 class="text-center mb-4">Perguntas frequentes</h3>
+        <div class="accordion" id="faq">
+          <div class="card mb-2">
+            <div class="card-header" id="q1">
+              <h6 class="mb-0">
+                <button
+                  class="btn btn-link"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#a1"
+                  aria-expanded="true"
+                  aria-controls="a1"
+                >
+                  Quem pode participar?
+                </button>
+              </h6>
+            </div>
+            <div
+              id="a1"
+              class="collapse show"
+              aria-labelledby="q1"
+              data-parent="#faq"
+            >
+              <div class="card-body">
+                Redes municipais de Educação Infantil, unidades parceiras e
+                organizações comunitárias interessadas. Famílias participam em
+                oficinas e atividades propostas.
+              </div>
+            </div>
+          </div>
+
+          <div class="card mb-2">
+            <div class="card-header" id="q2">
+              <h6 class="mb-0">
+                <button
+                  class="btn btn-link collapsed"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#a2"
+                  aria-expanded="false"
+                  aria-controls="a2"
+                >
+                  Há custos para as escolas?
+                </button>
+              </h6>
+            </div>
+            <div
+              id="a2"
+              class="collapse"
+              aria-labelledby="q2"
+              data-parent="#faq"
+            >
+              <div class="card-body">
+                A participação é viabilizada por parcerias e doações. Itens como
+                kits pedagógicos e deslocamentos podem requerer contrapartidas
+                locais — combinadas no termo de adesão.
+              </div>
+            </div>
+          </div>
+
+          <div class="card mb-2">
+            <div class="card-header" id="q3">
+              <h6 class="mb-0">
+                <button
+                  class="btn btn-link collapsed"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#a3"
+                  aria-expanded="false"
+                  aria-controls="a3"
+                >
+                  Como mensuram resultados?
+                </button>
+              </h6>
+            </div>
+            <div
+              id="a3"
+              class="collapse"
+              aria-labelledby="q3"
+              data-parent="#faq"
+            >
+              <div class="card-body">
+                Acompanhamos indicadores de processo (planejamento, ambientes,
+                participação familiar) e resultados (frequência, interações,
+                registros) com relatórios periódicos.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="text-center mt-4 cta">
+          <a href="doacao.html" class="btn btn-primary">Apoie este projeto</a>
+          <a href="contato.html" class="btn btn-outline-primary ml-2"
+            >Quero ser parceiro</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contato" class="footer_section">
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-lg-4">
+            <h4 class="mb-3">
+              <img
+                src="images/logo-educacao-white.png"
+                alt=""
+                style="height: 42px"
+              />
+            </h4>
+            <p>
+              Educação de qualidade para transformar o Brasil. Junte-se a nós.
+            </p>
+            <div class="mt-3">
+              <a href="#" aria-label="Facebook"
+                ><img src="images/fb-icon.png" alt="Facebook"
+              /></a>
+              <a href="#" class="ml-2" aria-label="Twitter"
+                ><img src="images/twitter-icon.png" alt="Twitter"
+              /></a>
+              <a href="#" class="ml-2" aria-label="LinkedIn"
+                ><img src="images/linkedin-icon.png" alt="LinkedIn"
+              /></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <h5>Contato</h5>
+            <ul class="list-unstyled">
+              <li>📍 <a href="contato.html">São Sebastião — DF</a></li>
+              <li>📞 (61) 0000-0000</li>
+              <li>
+                ✉️
+                <a href="mailto:contato@todospelaeducacao.org"
+                  >contato@todospelaeducacao.org</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-lg-4">
+            <h5></h5>
+            <form class="form-inline" action="newsletter.php" method="post">
+              <div class="input-group">
+                <input
+                  type="email"
+                  class="form-control"
+                  name="email"
+                  placeholder="Seu e-mail"
+                  required
+                />
+                <div class="input-group-append">
+                  <button class="btn btn-primary" type="submit">Assinar</button>
+                </div>
+              </div>
+              <small class="d-block mt-2"
+                >Receba novidades, resultados e oportunidades de
+                voluntariado.</small
+              >
+            </form>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div class="copyright_section">
+      <div class="container">
+        <p class="m-0">
+          © <span id="year"></span> Todos Pela Educação — Projeto Primeira
+          Infância.
+        </p>
+      </div>
+    </div>
+
+    <!-- scripts -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.0.0.min.js"></script>
+    <script src="js/plugin.js"></script>
+    <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="js/owl.carousel.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+    <script src="https://unpkg.com/gijgo@1.9.13/js/gijgo.min.js"></script>
+    <script>
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "100%";
+      }
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+      }
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>

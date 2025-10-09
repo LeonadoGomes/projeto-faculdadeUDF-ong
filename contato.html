@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Contato — Todos Pela Educação</title>
+    <meta
+      name="description"
+      content="Entre em contato com a equipe da Todos Pela Educação. Tire dúvidas, envie sugestões e saiba como apoiar nossa causa."
+    />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <link rel="icon" href="images/favicon.png" type="image/png" />
+    <link
+      rel="stylesheet"
+      href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:400,600,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      :root {
+        --azul: #0b3b81;
+        --amarelo: #ffd100;
+        --bg-suave: #f7fbff;
+      }
+      body {
+        font-family: "Poppins", sans-serif;
+      }
+      .header_section {
+        background: var(--azul);
+      }
+      .hero-mini {
+        background: var(--azul) url("images/hero-contato.jpg") center/cover
+          no-repeat;
+        color: #fff;
+        padding: 90px 0;
+        position: relative;
+        text-align: center;
+      }
+      .hero-mini::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: rgba(11, 59, 129, 0.55);
+      }
+      .hero-mini .container {
+        position: relative;
+        z-index: 2;
+      }
+      .hero-mini h1 {
+        font-weight: 700;
+        margin-bottom: 8px;
+      }
+      .lead-muted {
+        color: #e7efff;
+        max-width: 880px;
+        margin: 0 auto;
+      }
+      .block {
+        padding: 60px 0;
+      }
+      .card-soft {
+        border: 1px solid #eef2f7;
+        border-radius: 16px;
+        padding: 22px;
+        background: #fff;
+        box-shadow: 0 6px 16px rgba(0, 0, 0, 0.04);
+      }
+      .icon-badge {
+        width: 54px;
+        height: 54px;
+        display: grid;
+        place-items: center;
+        border-radius: 50%;
+        background: var(--azul);
+        color: #fff;
+        font-size: 20px;
+      }
+      .info-box {
+        text-align: center;
+      }
+      .info-box h6 {
+        margin-top: 10px;
+        font-weight: 600;
+      }
+      .map iframe {
+        border: 0;
+        width: 100%;
+        border-radius: 16px;
+        height: 360px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header -->
+    <div class="header_section">
+      <div class="container-fluid">
+        <nav
+          class="navbar navbar-light justify-content-between navbar-expand-lg navbar-dark"
+        >
+          <a class="logo navbar-brand ml-2" href="index.html"
+            ><img src="images/logo-educacao.png" alt="Logo Todos Pela Educação"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarNav"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Início</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="blog.html">Blog/Notícias</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="sobre.html">Sobre</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="projeto-primeira-infancia.html">Projetos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="doacao.html">Doações</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="transparencia.html">Transparência</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="contato.html">Contato</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </div>
+
+    <!-- Hero -->
+    <section class="hero-mini">
+      <div class="container">
+        <h1>Fale Conosco</h1>
+        <p class="lead lead-muted">
+          Envie sua mensagem, tire dúvidas ou saiba como se envolver com a Todos
+          Pela Educação.
+        </p>
+      </div>
+    </section>
+
+    <!-- Contato -->
+    <section class="block">
+      <div class="container">
+        <div class="row align-items-start">
+          <div class="col-lg-6 mb-4 mb-lg-0">
+            <div class="card-soft">
+              <h4 class="mb-3">Envie sua mensagem</h4>
+              <form action="enviar-contato.php" method="post">
+                <div class="form-group">
+                  <label>Nome completo</label>
+                  <input
+                    type="text"
+                    name="nome"
+                    class="form-control"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label>E-mail</label>
+                  <input
+                    type="email"
+                    name="email"
+                    class="form-control"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label>Assunto</label>
+                  <input
+                    type="text"
+                    name="assunto"
+                    class="form-control"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label>Mensagem</label>
+                  <textarea
+                    name="mensagem"
+                    rows="5"
+                    class="form-control"
+                    required
+                  ></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block">
+                  Enviar mensagem
+                </button>
+              </form>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="row g-4">
+              <div class="col-md-6 info-box">
+                <div class="icon-badge mx-auto mb-2">
+                  <i class="fa fa-map-marker"></i>
+                </div>
+                <h6>Endereço</h6>
+                <p>Rua Exemplo, 123<br />Brasilia— DF</p>
+              </div>
+              <div class="col-md-6 info-box">
+                <div class="icon-badge mx-auto mb-2">
+                  <i class="fa fa-envelope"></i>
+                </div>
+                <h6>E-mail</h6>
+                <p>
+                  <a href="mailto:contato@todospelaeducacao.org"
+                    >contato@todospelaeducacao.org</a
+                  >
+                </p>
+              </div>
+              <div class="col-md-6 info-box">
+                <div class="icon-badge mx-auto mb-2">
+                  <i class="fa fa-phone"></i>
+                </div>
+                <h6>Telefone</h6>
+                <p>(61) 0000-0000</p>
+              </div>
+              <div class="col-md-6 info-box">
+                <div class="icon-badge mx-auto mb-2">
+                  <i class="fa fa-clock-o"></i>
+                </div>
+                <h6>Atendimento</h6>
+                <p>Seg. a Sex. das 9h às 17h</p>
+              </div>
+            </div>
+
+            <div class="map mt-4">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3837.832795585545!2d-47.78651422478467!3d-15.899662823608458!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935a3b10adf9a3f3%3A0x92a6e1f6aef3dff3!2sS%C3%A3o%20Sebasti%C3%A3o%20-%20DF%2C%2071620-000!5e0!3m2!1spt-BR!2sbr!4v1728265768571!5m2!1spt-BR!2sbr"
+                allowfullscreen
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              >
+              </iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer_section">
+      <div class="container text-center">
+        <p class="m-0">
+          © <span id="year"></span> Todos Pela Educação — Contato
+        </p>
+      </div>
+    </footer>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>

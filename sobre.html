@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <!-- basic -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- site metas -->
+    <title>Sobre a Organização — Todos Pela Educação</title>
+    <meta
+      name="description"
+      content="Conheça a missão, visão, valores, governança, equipe e parceiros da ONG Todos Pela Educação."
+    />
+    <meta
+      name="keywords"
+      content="sobre, quem somos, missão, valores, transparência, educação"
+    />
+    <meta name="author" content="Todos Pela Educação" />
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- style css -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Responsive-->
+    <link rel="stylesheet" href="css/responsive.css" />
+    <!-- fevicon -->
+    <link rel="icon" href="images/favicon.png" type="image/png" />
+    <!-- Scrollbar Custom CSS -->
+    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css" />
+    <!-- fonts/icons -->
+    <link
+      rel="stylesheet"
+      href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:400,600,700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- extras -->
+    <link rel="stylesheet" href="css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="css/owl.theme.default.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css"
+    />
+
+    <style>
+      /* ajustes rápidos para a página Sobre */
+      .header_section {
+        background: #0b3b81;
+      }
+      .hero-mini {
+        background: #0b3b81 url("images/hero-sobre.jpg") center/cover no-repeat; /* TROQUE a imagem */
+        color: #fff;
+        padding: 80px 0;
+        position: relative;
+        text-align: center;
+      }
+      .hero-mini::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: rgba(11, 59, 129, 0.55);
+      }
+      .hero-mini .container {
+        position: relative;
+        z-index: 2;
+      }
+      .hero-mini h1 {
+        font-weight: 700;
+        margin-bottom: 8px;
+      }
+      .lead-muted {
+        color: #e7efff;
+        max-width: 820px;
+        margin: 0 auto;
+      }
+
+      .about-block {
+        padding: 56px 0;
+      }
+      .about-icon {
+        width: 58px;
+        height: 58px;
+        border-radius: 14px;
+        display: grid;
+        place-items: center;
+        background: #0b3b81;
+        color: #ffd100;
+      }
+      .about-card {
+        border: 1px solid #eef2f7;
+        border-radius: 16px;
+        padding: 22px;
+        height: 100%;
+        background: #fff;
+        box-shadow: 0 6px 16px rgba(0, 0, 0, 0.04);
+      }
+
+      .values li {
+        margin-bottom: 10px;
+      }
+      .governance small {
+        color: #666;
+      }
+      .parceiros img {
+        height: 44px;
+        object-fit: contain;
+        filter: grayscale(1);
+        opacity: 0.8;
+        transition: 0.2s;
+      }
+      .parceiros img:hover {
+        filter: none;
+        opacity: 1;
+      }
+      .faq .card {
+        border-radius: 12px;
+        overflow: hidden;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- header -->
+    <div class="header_section">
+      <div class="container-fluid">
+        <nav
+          class="navbar navbar-light justify-content-between navbar-expand-lg navbar-dark"
+        >
+          <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+              >&times;</a
+            >
+            <a href="index.html">Início</a>
+            <a class="nav-link" href="blog.html">Blog/Notícias</a>
+            <a href="sobre.html" class="active">Sobre</a>
+            <a href="projeto-primeira-infancia.html">Projetos</a>
+            <a href="transparencia.html">Transparência</a>
+            <a href="contato.html">Contato</a>
+          </div>
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            onclick="openNav()"
+            aria-label="Abrir menu"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <a class="logo navbar-brand ml-2" href="index.html">
+            <!-- sua logo -->
+            <img
+              src="images/logo-educacao.png"
+              alt="Logo Todos Pela Educação"
+            />
+          </a>
+
+          <div class="d-none d-lg-flex">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Início</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="blog.html">Blog/Notícias</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="sobre.html">Sobre</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="projeto-primeira-infancia.html"
+                  >Projetos</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="transparencia.html">Transparência</a>
+              </li>
+              <li class="nav-item">
+                <a class="btn btn-sm btn-primary ml-2" href="doacao.html"
+                  >Doe agora</a
+                >
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </div>
+
+    <!-- hero mini -->
+    <section class="hero-mini">
+      <div class="container">
+        <h1>Sobre a Organização</h1>
+        <p class="lead lead-muted">
+          Quem somos, no que acreditamos e como trabalhamos para transformar a
+          educação no Brasil.
+        </p>
+      </div>
+    </section>
+
+    <!-- Missão, Visão, Valores -->
+    <section class="about-block">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="about-card h-100">
+              <div class="d-flex align-items-center mb-3">
+                <div class="about-icon mr-3"><i class="fa fa-flag"></i></div>
+                <h4 class="m-0">Missão</h4>
+              </div>
+              <p>
+                Garantir educação pública de qualidade, inclusiva e com equidade
+                para todas as crianças e jovens, fortalecendo escolas,
+                professores e comunidades.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="about-card h-100">
+              <div class="d-flex align-items-center mb-3">
+                <div class="about-icon mr-3"><i class="fa fa-eye"></i></div>
+                <h4 class="m-0">Visão</h4>
+              </div>
+              <p>
+                Um Brasil em que cada estudante aprende mais e melhor,
+                desenvolvendo seu potencial para construir um futuro justo e
+                próspero.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="about-card h-100">
+              <div class="d-flex align-items-center mb-3">
+                <div class="about-icon mr-3"><i class="fa fa-heart"></i></div>
+                <h4 class="m-0">Valores</h4>
+              </div>
+              <ul class="values pl-3">
+                <li>Transparência e responsabilidade</li>
+                <li>Equidade e inclusão</li>
+                <li>Inovação com evidências</li>
+                <li>Colaboração e impacto</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- História + Foto -->
+    <section class="about-block" style="background: #f7fbff">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6 mb-4 mb-lg-0">
+            <h3>Nosso caminho</h3>
+            <p>
+              Desde <strong>2025</strong>, unimos educadores, famílias, gestores
+              públicos e iniciativa privada em prol da melhoria da educação
+              básica. Começamos com oficinas de leitura e hoje atuamos com
+              formação de professores, inclusão digital e reforço escolar em
+              diferentes regiões do país.
+            </p>
+            <p>
+              Seguimos uma abordagem orientada por dados e evidências, com
+              avaliação contínua de resultados e prestação de contas à
+              sociedade.
+            </p>
+          </div>
+          <div class="col-lg-6">
+            <!-- TROQUE a imagem -->
+            <img
+              src="images/sobre-historia.jpg"
+              class="img-fluid rounded"
+              alt="Nossa trajetória"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Governança e Transparência -->
+    <section class="about-block governance">
+      <div class="container">
+        <h3 class="mb-4 text-center">Governança e Transparência</h3>
+        <div class="row g-4">
+          <div class="col-md-6">
+            <div class="about-card">
+              <h5>Estrutura de governança</h5>
+              <ul class="pl-3 mb-2">
+                <li>
+                  Conselho Diretor — define diretrizes e supervisiona
+                  resultados.
+                </li>
+                <li>Diretoria Executiva — gestão estratégica e operacional.</li>
+                <li>Comitê Fiscal — auditoria e conformidade.</li>
+              </ul>
+              <!-- <small>Publicamos relatórios anuais, auditorias independentes e indicadores de impacto.</small><br/>
+            <a class="btn btn-sm btn-outline-primary mt-2" href="transparencia.html">Portal da Transparência</a> -->
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="about-card">
+              <h5>Políticas</h5>
+              <ul class="pl-3">
+                <li>Integridade e anticorrupção</li>
+                <li>Proteção de dados (LGPD)</li>
+                <li>Proteção à criança e ao adolescente</li>
+                <li>Diversidade e inclusão</li>
+              </ul>
+              <!-- <a class="btn btn-sm btn-outline-primary" href="docs/politicas.zip">Baixar políticas</a> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Equipe -->
+    <section class="about-block">
+      <div class="container">
+        <h3 class="text-center mb-4">Nossa equipe</h3>
+        <div class="row g-4">
+          <!-- Repita os cards para mais pessoas -->
+          <div class="col-sm-6 col-lg-3">
+            <div class="about-card text-center">
+              <img
+                src="images/team-1.jpg"
+                class="img-fluid rounded mb-3"
+                alt="Carlos Silva"
+              />
+              <h6 class="mb-0">Carlos Silva</h6>
+              <small>Diretor Executiva</small>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-3">
+            <div class="about-card text-center">
+              <img
+                src="images/team-2.jpg"
+                class="img-fluid rounded mb-3"
+                alt="Rafaela Bernado"
+              />
+              <h6 class="mb-0">Rafaela Bernado</h6>
+              <small>Coord. Pedagógica</small>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-3">
+            <div class="about-card text-center">
+              <img
+                src="images/team-3.jpg"
+                class="img-fluid rounded mb-3"
+                alt="Marcos Andrade"
+              />
+              <h6 class="mb-0">Marcos Andrade</h6>
+              <small>Gestão de Projetos</small>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-3">
+            <div class="about-card text-center">
+              <img
+                src="images/team-4.jpg"
+                class="img-fluid rounded mb-3"
+                alt="Tereza Afonso"
+              />
+              <h6 class="mb-0">Tereza Afonso</h6>
+              <small>Captação de Recursos</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Parceiros -->
+    <!-- <section class="about-block parceiros" style="background:#f7fbff;">
+    <div class="container">
+      <h3 class="text-center mb-4">Nossos parceiros</h3>
+      <div class="row text-center align-items-center">
+        <div class="col-6 col-md-3 mb-3"><img src="images/partner-1.png" alt="Parceiro 1" /></div>
+        <div class="col-6 col-md-3 mb-3"><img src="images/partner-2.png" alt="Parceiro 2" /></div>
+        <div class="col-6 col-md-3 mb-3"><img src="images/partner-3.png" alt="Parceiro 3" /></div>
+        <div class="col-6 col-md-3 mb-3"><img src="images/partner-4.png" alt="Parceiro 4" /></div>
+      </div>
+    </div>
+  </section> -->
+
+    <!-- FAQ -->
+    <section class="about-block faq">
+      <div class="container">
+        <h3 class="text-center mb-4">Perguntas frequentes</h3>
+        <div class="accordion" id="faq">
+          <div class="card mb-2">
+            <div class="card-header" id="q1">
+              <h6 class="mb-0">
+                <button
+                  class="btn btn-link"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#a1"
+                  aria-expanded="true"
+                  aria-controls="a1"
+                >
+                  Como posso ser voluntário?
+                </button>
+              </h6>
+            </div>
+            <div
+              id="a1"
+              class="collapse show"
+              aria-labelledby="q1"
+              data-parent="#faq"
+            >
+              <div class="card-body">
+                Acesse <a href="voluntariado.html">voluntariado</a>, preencha o
+                formulário e nossa equipe entrará em contato com as próximas
+                etapas.
+              </div>
+            </div>
+          </div>
+
+          <div class="card mb-2">
+            <div class="card-header" id="q2">
+              <h6 class="mb-0">
+                <button
+                  class="btn btn-link collapsed"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#a2"
+                  aria-expanded="false"
+                  aria-controls="a2"
+                >
+                  Como são utilizados os recursos das doações?
+                </button>
+              </h6>
+            </div>
+            <div
+              id="a2"
+              class="collapse"
+              aria-labelledby="q2"
+              data-parent="#faq"
+            >
+              <div class="card-body">
+                Priorizamos formação de professores, materiais pedagógicos,
+                infraestrutura e avaliação de impacto. Veja o
+                <a href="transparencia.html">Portal da Transparência</a>.
+              </div>
+            </div>
+          </div>
+
+          <div class="card mb-2">
+            <div class="card-header" id="q3">
+              <h6 class="mb-0">
+                <button
+                  class="btn btn-link collapsed"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#a3"
+                  aria-expanded="false"
+                  aria-controls="a3"
+                >
+                  Emitimos recibo para fins de imposto de renda?
+                </button>
+              </h6>
+            </div>
+            <div
+              id="a3"
+              class="collapse"
+              aria-labelledby="q3"
+              data-parent="#faq"
+            >
+              <div class="card-body">
+                Sim. Após a doação, enviamos o recibo por e-mail. Para doações
+                recorrentes, você acessa seus recibos em
+                <a href="doacao.html">Minha Doação</a>.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="text-center mt-4">
+          <a href="doacao.html" class="btn btn-primary">Doe agora</a>
+          <a href="contato.html" class="btn btn-outline-primary ml-2"
+            >Fale conosco</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contato" class="footer_section">
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-lg-4">
+            <h4 class="mb-3">
+              <img
+                src="images/logo-educacao-white.png"
+                alt=""
+                style="height: 42px"
+              />
+            </h4>
+            <p>
+              Educação de qualidade para transformar o Brasil. Junte-se a nós.
+            </p>
+            <div class="mt-3">
+              <a href="#" aria-label="Facebook"
+                ><img src="images/fb-icon.png" alt="Facebook"
+              /></a>
+              <a href="#" class="ml-2" aria-label="Twitter"
+                ><img src="images/twitter-icon.png" alt="Twitter"
+              /></a>
+              <a href="#" class="ml-2" aria-label="LinkedIn"
+                ><img src="images/linkedin-icon.png" alt="LinkedIn"
+              /></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <h5>Contato</h5>
+            <ul class="list-unstyled">
+              <li>📍 Endereço da ONG</li>
+              <li>📞 (00) 0000-0000</li>
+              <li>✉️ contato@todospelaeducacao.org</li>
+            </ul>
+          </div>
+
+          <div class="col-lg-4">
+            <h5></h5>
+            <form class="form-inline" action="newsletter.php" method="post">
+              <div class="input-group">
+                <input
+                  type="email"
+                  class="form-control"
+                  name="email"
+                  placeholder="Seu e-mail"
+                  required
+                />
+                <div class="input-group-append">
+                  <button class="btn btn-primary" type="submit">Assinar</button>
+                </div>
+              </div>
+              <small class="d-block mt-2"
+                >Receba novidades, resultados e oportunidades de
+                voluntariado.</small
+              >
+            </form>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div class="copyright_section">
+      <div class="container">
+        <p class="m-0">
+          © <span id="year"></span> Todos Pela Educação — Transparência e
+          impacto.
+        </p>
+      </div>
+    </div>
+
+    <!-- scripts -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.0.0.min.js"></script>
+    <script src="js/plugin.js"></script>
+    <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="js/owl.carousel.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+    <script src="https://unpkg.com/gijgo@1.9.13/js/gijgo.min.js"></script>
+    <script>
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "100%";
+      }
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+      }
+    </script>
+  </body>
+</html>

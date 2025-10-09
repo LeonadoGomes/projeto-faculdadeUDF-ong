@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Voluntariado — Todos Pela Educação</title>
+    <meta
+      name="description"
+      content="Faça parte do voluntariado da Todos Pela Educação. Atue em projetos de leitura, reforço escolar, mentoria de professores e inclusão digital."
+    />
+    <meta
+      name="keywords"
+      content="voluntariado, todos pela educação, projetos sociais, educação, mentor, reforço escolar, inclusão digital"
+    />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <link rel="icon" href="images/favicon.png" type="image/png" />
+    <link
+      rel="stylesheet"
+      href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:400,600,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      :root {
+        --azul: #0b3b81;
+        --amarelo: #ffd100;
+        --bg-suave: #f7fbff;
+      }
+      .header_section {
+        background: var(--azul);
+      }
+      .hero-mini {
+        background: var(--azul) url("images/hero-voluntariado.jpg") center/cover
+          no-repeat;
+        color: #fff;
+        padding: 90px 0;
+        position: relative;
+        text-align: center;
+      }
+      .hero-mini::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: rgba(11, 59, 129, 0.55);
+      }
+      .hero-mini .container {
+        position: relative;
+        z-index: 2;
+      }
+      .hero-mini h1 {
+        font-weight: 700;
+        margin-bottom: 8px;
+      }
+      .lead-muted {
+        color: #e7efff;
+        max-width: 880px;
+        margin: 0 auto;
+      }
+      .block {
+        padding: 60px 0;
+      }
+      .card-soft {
+        border: 1px solid #eef2f7;
+        border-radius: 16px;
+        padding: 22px;
+        background: #fff;
+        box-shadow: 0 6px 16px rgba(0, 0, 0, 0.04);
+        height: 100%;
+      }
+      .icon-badge {
+        width: 58px;
+        height: 58px;
+        border-radius: 14px;
+        display: grid;
+        place-items: center;
+        background: var(--azul);
+        color: var(--amarelo);
+      }
+      form.volunteer-form input,
+      form.volunteer-form select,
+      form.volunteer-form textarea {
+        margin-bottom: 14px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header_section">
+      <div class="container-fluid">
+        <nav
+          class="navbar navbar-light justify-content-between navbar-expand-lg navbar-dark"
+        >
+          <a class="logo navbar-brand ml-2" href="index.html"
+            ><img src="images/logo-educacao.png" alt="Logo Todos Pela Educação"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarNav"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Início</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="sobre.html">Sobre</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="projeto-primeira-infancia.html"
+                  >Projetos</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="voluntariado.html"
+                  >Voluntariado</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contato.html">Contato</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </div>
+
+    <section class="hero-mini">
+      <div class="container">
+        <h1>Voluntariado</h1>
+        <p class="lead lead-muted">
+          Seja parte da transformação da educação. Compartilhe seu tempo,
+          conhecimento e energia para impactar vidas.
+        </p>
+      </div>
+    </section>
+
+    <section class="block">
+      <div class="container">
+        <h3 class="text-center mb-5">Áreas de atuação</h3>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="card-soft text-center">
+              <div class="icon-badge mb-3"><i class="fa fa-book"></i></div>
+              <h5>Leitura e Alfabetização</h5>
+              <p>
+                Apoie o desenvolvimento da leitura e escrita de crianças dos
+                anos iniciais com atividades lúdicas e acompanhamento.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card-soft text-center">
+              <div class="icon-badge mb-3"><i class="fa fa-laptop"></i></div>
+              <h5>Inclusão Digital</h5>
+              <p>
+                Ajude estudantes e famílias a aprender a usar tecnologias de
+                forma segura e produtiva, promovendo o letramento digital.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card-soft text-center">
+              <div class="icon-badge mb-3"><i class="fa fa-users"></i></div>
+              <h5>Mentoria de Professores</h5>
+              <p>
+                Compartilhe experiências e boas práticas pedagógicas com
+                educadores locais, fortalecendo redes de apoio e aprendizagem.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="block" style="background: var(--bg-suave)">
+      <div class="container">
+        <h3 class="text-center mb-4">Como participar</h3>
+        <div class="row align-items-center">
+          <div class="col-lg-6 mb-4 mb-lg-0">
+            <ul class="pl-3 list-check">
+              <li>Escolha uma área de atuação entre nossos projetos ativos.</li>
+              <li>Preencha o formulário de inscrição abaixo.</li>
+              <li>
+                Participe da formação introdutória de voluntários (on-line).
+              </li>
+              <li>
+                Atue de forma presencial ou remota, conforme sua
+                disponibilidade.
+              </li>
+            </ul>
+            <p class="mt-3">
+              Cada voluntário recebe certificação de participação e
+              acompanhamento contínuo da equipe da ONG.
+            </p>
+          </div>
+          <div class="col-lg-6">
+            <div class="card-soft">
+              <form
+                class="volunteer-form"
+                action="submit_voluntario.php"
+                method="post"
+              >
+                <div class="form-group">
+                  <label>Nome completo</label>
+                  <input
+                    type="text"
+                    name="nome"
+                    class="form-control"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label>E-mail</label>
+                  <input
+                    type="email"
+                    name="email"
+                    class="form-control"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="telefone">Telefone</label>
+                  <input
+                    id="telefone"
+                    type="tel"
+                    name="telefone"
+                    class="form-control"
+                    placeholder="(00) 00000-0000"
+                    inputmode="numeric"
+                    autocomplete="tel"
+                    maxlength="15"
+                    oninput="handlePhoneInput(this)"
+                    onblur="handlePhoneInput(this)"
+                  />
+                </div>
+                <div class="form-group">
+                  <label>Área de interesse</label>
+                  <select name="area" class="form-control" required>
+                    <option value="">Selecione</option>
+                    <option value="leitura">Leitura e Alfabetização</option>
+                    <option value="inclusao">Inclusão Digital</option>
+                    <option value="mentoria">Mentoria de Professores</option>
+                    <option value="reforco">Reforço Escolar</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label>Mensagem</label>
+                  <textarea
+                    name="mensagem"
+                    rows="4"
+                    class="form-control"
+                    placeholder="Conte-nos sobre sua motivação"
+                  ></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block">
+                  Enviar inscrição
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer_section">
+      <div class="container text-center">
+        <p class="m-0">
+          © <span id="year"></span> Todos Pela Educação — Programa de
+          Voluntariado
+        </p>
+      </div>
+    </footer>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/telefone.js"></script>
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>

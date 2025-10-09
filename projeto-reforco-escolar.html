@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <!-- basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- site metas -->
+  <title>Projeto Reforço Escolar — Todos Pela Educação</title>
+  <meta name="description" content="Reforço escolar com foco em alfabetização, matemática básica e estudo orientado. Veja objetivos, metodologia, cronograma, indicadores e como participar." />
+  <meta name="keywords" content="reforço escolar, recuperação de aprendizagem, alfabetização, matemática, tutoria, monitoria, contraturno" />
+  <meta name="author" content="Todos Pela Educação" />
+  <!-- bootstrap css -->
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <!-- style css -->
+  <link rel="stylesheet" href="css/style.css" />
+  <!-- Responsive-->
+  <link rel="stylesheet" href="css/responsive.css" />
+  <!-- fevicon -->
+  <link rel="icon" href="images/favicon.png" type="image/png" />
+  <!-- Scrollbar Custom CSS -->
+  <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css" />
+  <!-- fonts/icons -->
+  <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" />
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,600,700&display=swap" rel="stylesheet" />
+  <!-- extras -->
+  <link rel="stylesheet" href="css/owl.carousel.min.css" />
+  <link rel="stylesheet" href="css/owl.theme.default.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" />
+
+  <style>
+    :root{ --azul:#0b3b81; --amarelo:#ffd100; --bg-suave:#f7fbff; }
+    .header_section { background:var(--azul); }
+    .hero-mini{ background:var(--azul) url('images/hero-reforco-escolar.jpg') center/cover no-repeat; color:#fff; padding:90px 0; position:relative; text-align:center; }
+    .hero-mini::after{ content:""; position:absolute; inset:0; background:rgba(11,59,129,.55); }
+    .hero-mini .container{ position:relative; z-index:2; }
+    .hero-mini h1{ font-weight:700; margin-bottom:8px; }
+    .lead-muted{ color:#e7efff; max-width:880px; margin:0 auto; }
+
+    .block{ padding:60px 0; }
+    .card-soft{ border:1px solid #eef2f7; border-radius:16px; padding:22px; background:#fff; box-shadow:0 6px 16px rgba(0,0,0,.04); height:100%; }
+    .icon-badge{ width:58px; height:58px; border-radius:14px; display:grid; place-items:center; background:var(--azul); color:var(--amarelo); }
+    .list-check li{ margin-bottom:8px; }
+    .pillars .card-soft{ transition:.2s; }
+    .pillars .card-soft:hover{ transform:translateY(-3px); box-shadow:0 10px 24px rgba(0,0,0,.06); }
+    .metric{ text-align:center; }
+    .metric h2{ font-weight:700; margin:0; }
+    .metric small{ color:#64748b; }
+    .timeline{ position:relative; }
+    .timeline::before{ content:""; position:absolute; left:calc(50% - 1px); top:0; bottom:0; width:2px; background:#e5e9f2; }
+    .t-item{ position:relative; margin-bottom:30px; }
+    .t-item .bubble{ background:#fff; border:1px solid #eef2f7; border-radius:14px; padding:18px; box-shadow:0 6px 16px rgba(0,0,0,.04); }
+    .t-item .dot{ width:14px; height:14px; background:var(--azul); border-radius:999px; position:absolute; left:calc(50% - 7px); top:10px; }
+    .faq .card{ border-radius:12px; overflow:hidden; }
+    .cta .btn{ min-width:180px; }
+  </style>
+
+<body>
+  <!-- header -->
+  <div class="header_section">
+    <div class="container-fluid">
+      <nav class="navbar navbar-light justify-content-between navbar-expand-lg navbar-dark">
+        <div id="mySidenav" class="sidenav">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <a href="index.html">Início</a>
+            <a class="nav-link" href="blog.html">Blog/Notícias</a>
+          <a href="sobre.html">Sobre</a>
+          <a href="projetos.html" class="active">Projetos</a>
+          <a href="transparencia.html">Transparência</a>
+          <a href="contato.html">Contato</a>
+        </div>
+
+        <button class="navbar-toggler" type="button" onclick="openNav()" aria-label="Abrir menu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <a class="logo navbar-brand ml-2" href="index.html">
+          <img src="images/logo-educacao.png" alt="Logo Todos Pela Educação" />
+        </a>
+
+        <div class="d-none d-lg-flex">
+          <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="index.html">Início</a></li>
+            <li class="nav-item">
+                <a class="nav-link" href="blog.html">Blog/Notícias</a>
+              </li>
+            <li class="nav-item"><a class="nav-link" href="sobre.html">Sobre</a></li>
+            <li class="nav-item"><a class="nav-link active" href="projeto-reforco-escolar.html">Projetos</a></li>
+            <li class="nav-item"><a class="nav-link" href="transparencia.html">Transparência</a></li>
+                <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
+            <li class="nav-item"><a class="btn btn-sm btn-primary ml-2" href="doacao.html">Doe agora</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </div>
+
+  <!-- hero mini -->
+  <section class="hero-mini">
+    <div class="container">
+      <h1>Projeto Reforço Escolar</h1>
+      <p class="lead lead-muted">Aprender com foco: tutorias de alfabetização, matemática e técnicas de estudo no contraturno.</p>
+    </div>
+  </section>
+
+  <!-- Objetivos-chave -->
+  <section class="block">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card-soft h-100">
+            <div class="d-flex align-items-center mb-3"><div class="icon-badge mr-3"><i class="fa fa-book"></i></div><h4 class="m-0">Alfabetização</h4></div>
+            <p>Foco em consciência fonológica, fluência de leitura e produção de textos curtos.</p>
+          </div>
+        </div>
+       <div class="col-md-4">
+  <div class="card-soft h-100">
+    <div class="d-flex align-items-center mb-3">
+      <div class="icon-badge mr-3"><i class="fa fa-superscript"></i></div>
+      <h4 class="m-0">Matemática</h4>
+    </div>
+    <p>Números e operações, resolução de problemas e raciocínio lógico com jogos e materiais simples.</p>
+  </div>
+</div>
+        <div class="col-md-4">
+          <div class="card-soft h-100">
+            <div class="d-flex align-items-center mb-3"><div class="icon-badge mr-3"><i class="fa fa-check-square-o"></i></div><h4 class="m-0">Estudo Orientado</h4></div>
+            <p>Rotina de tarefas, organização de caderno, técnicas de estudo e autoavaliação.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pilares -->
+  <section class="block pillars" style="background:var(--bg-suave);">
+    <div class="container">
+      <h3 class="text-center mb-4">Pilares do Programa</h3>
+      <div class="row g-4 align-items-stretch">
+        <div class="col-md-6 col-lg-3"><div class="card-soft h-100"><h5>Triagem e Agrupamentos</h5><ul class="list-check pl-3 mb-0"><li>Avaliação diagnóstica inicial</li><li>Turmas por nível de proficiência</li><li>Planos semanais</li></ul></div></div>
+        <div class="col-md-6 col-lg-3"><div class="card-soft h-100"><h5>Sequências Didáticas</h5><ul class="list-check pl-3 mb-0"><li>Rotinas curtas e objetivas</li><li>Materiais de baixo custo</li><li>Jogos e leitura guiada</li></ul></div></div>
+        <div class="col-md-6 col-lg-3"><div class="card-soft h-100"><h5>Monitoria e Tutoria</h5><ul class="list-check pl-3 mb-0"><li>Voluntários formados</li><li>Roteiros de observação</li><li>Devolutivas ágeis</li></ul></div></div>
+        <div class="col-md-6 col-lg-3"><div class="card-soft h-100"><h5>Acompanhamento</h5><ul class="list-check pl-3 mb-0"><li>Rubricas bimestrais</li><li>Frequência e engajamento</li><li>Relatórios às famílias</li></ul></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Público-alvo e Metas -->
+  <section class="block">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6 mb-4 mb-lg-0">
+          <h3>Público-alvo</h3>
+          <p>Estudantes com defasagens de aprendizagem dos Anos Iniciais e Finais do Ensino Fundamental. Famílias participam com apoio à rotina de estudos.</p>
+          <div class="row text-center mt-4">
+            <div class="col-4 metric"><h2>3.000</h2><small>estudantes</small></div>
+            <div class="col-4 metric"><h2>200</h2><small>monitores</small></div>
+            <div class="col-4 metric"><h2>60</h2><small>escolas</small></div>
+          </div>
+          <small class="d-block mt-2 text-muted">Ajuste os números para o seu contexto.</small>
+        </div>
+        <div class="col-lg-6">
+          <div class="card-soft">
+            <h5 class="mb-2">Metas de 12 meses</h5>
+            <ul class="list-check pl-3 mb-0">
+              <li>Elevar em 20 p.p. a proporção de alunos fluentes em leitura.</li>
+              <li>Reduzir em 25% a proporção de alunos com níveis muito críticos em matemática.</li>
+              <li>80% dos participantes com rotina de estudos semanal consolidada.</li>
+              <li>Frequência média ≥ 75% nas turmas de reforço.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Metodologia -->
+  <section class="block" style="background:var(--bg-suave);">
+    <div class="container">
+      <h3 class="text-center mb-4">Metodologia</h3>
+      <div class="row g-4">
+        <div class="col-md-6"><div class="card-soft h-100"><h5>Como fazemos</h5><p>Contraturno com 2–3 encontros semanais (60–90 min). Roteiros de atividades, leitura guiada, jogos matemáticos e produção textual curta.</p><ul class="pl-3 list-check mb-0"><li>Grupos por nível (máx. 12 alunos)</li><li>Planos quinzenais e revisão bimestral</li><li>Encontros com famílias</li></ul></div></div>
+        <div class="col-md-6"><div class="card-soft h-100"><h5>Indicadores</h5><ul class="pl-3 list-check"><li>Fluência leitora (palavras/min, compreensão)</li><li>Matemática (acertos por habilidade)</li><li>Frequência e engajamento</li><li>Autoavaliação de estudo</li></ul><small class="text-muted">Painel de monitoramento e relatórios bimestrais.</small></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Cronograma -->
+  <section class="block">
+    <div class="container">
+      <h3 class="text-center mb-4">Cronograma</h3>
+      <div class="timeline">
+        <div class="t-item row"><div class="dot"></div><div class="col-md-6 col-lg-5"><div class="bubble"><strong>Fase 1 — Diagnóstico (M1)</strong><p>Aplicação de avaliações, identificação de estudantes e formação de monitores.</p></div></div></div>
+        <div class="t-item row"><div class="dot"></div><div class="col-md-6 offset-md-6 col-lg-5 offset-lg-7"><div class="bubble"><strong>Fase 2 — Implementação (M2–M10)</strong><p>Encontros no contraturno, monitoria, acompanhamento e devolutivas às famílias.</p></div></div></div>
+        <div class="t-item row"><div class="dot"></div><div class="col-md-6 col-lg-5"><div class="bubble"><strong>Fase 3 — Consolidação (M11–M12)</strong><p>Mostras de leitura, feiras de matemática e plano de continuidade.</p></div></div></div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- FAQ -->
+  <section class="block faq">
+    <div class="container">
+      <h3 class="text-center mb-4">Perguntas frequentes</h3>
+      <div class="accordion" id="faq">
+        <div class="card mb-2"><div class="card-header" id="q1"><h6 class="mb-0"><button class="btn btn-link" type="button" data-toggle="collapse" data-target="#a1" aria-expanded="true" aria-controls="a1">Quem pode participar?</button></h6></div><div id="a1" class="collapse show" aria-labelledby="q1" data-parent="#faq"><div class="card-body">Estudantes com defasagens identificadas pela escola e indicados pela equipe pedagógica. Prioridade para casos mais críticos.</div></div></div>
+        <div class="card mb-2"><div class="card-header" id="q2"><h6 class="mb-0"><button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#a2" aria-expanded="false" aria-controls="a2">O reforço acontece em qual horário?</button></h6></div><div id="a2" class="collapse" aria-labelledby="q2" data-parent="#faq"><div class="card-body">No contraturno, com 2–3 encontros semanais de 60–90 minutos, conforme organização da escola.</div></div></div>
+        <div class="card mb-2"><div class="card-header" id="q3"><h6 class="mb-0"><button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#a3" aria-expanded="false" aria-controls="a3">Há materiais específicos?</button></h6></div><div id="a3" class="collapse" aria-labelledby="q3" data-parent="#faq"><div class="card-body">Utilizamos sequências didáticas simples, jogos e materiais de baixo custo. Materiais complementares podem ser disponibilizados digitalmente.</div></div></div>
+      </div>
+
+      <div class="text-center mt-4 cta">
+        <a href="doacao.html" class="btn btn-primary">Apoie este projeto</a>
+        <a href="contato.html" class="btn btn-outline-primary ml-2">Quero implementar</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer id="contato" class="footer_section">
+    <div class="container">
+      <div class="row gy-4">
+        <div class="col-lg-4">
+          <h4 class="mb-3"><img src="images/logo-educacao-white.png" alt="" style="height: 42px" /></h4>
+          <p>Educação de qualidade para transformar o Brasil. Junte-se a nós.</p>
+          <div class="mt-3">
+            <a href="#" aria-label="Facebook"><img src="images/fb-icon.png" alt="Facebook" /></a>
+            <a href="#" class="ml-2" aria-label="Twitter"><img src="images/twitter-icon.png" alt="Twitter" /></a>
+            <a href="#" class="ml-2" aria-label="LinkedIn"><img src="images/linkedin-icon.png" alt="LinkedIn" /></a>
+          </div>
+        </div>
+        <div class="col-lg-4">
+            <h5>Contato</h5>
+            <ul class="list-unstyled">
+              <li>📍 <a href="contato.html">São Sebastião — DF</a></li>
+              <li>📞 (61) 0000-0000</li>
+              <li>✉️ <a href="mailto:contato@todospelaeducacao.org">contato@todospelaeducacao.org</a></li>
+            </ul>
+          </div>
+        <div class="col-lg-4">
+          <h5></h5>
+          <form class="form-inline" action="newsletter.php" method="post">
+            <div class="input-group">
+              <input type="email" class="form-control" name="email" placeholder="Seu e-mail" required />
+              <div class="input-group-append"><button class="btn btn-primary" type="submit">Assinar</button></div>
+            </div>
+            <small class="d-block mt-2">Receba novidades, resultados e oportunidades de voluntariado.</small>
+          </form>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div class="copyright_section">
+    <div class="container"><p class="m-0">© <span id="year"></span> Todos Pela Educação — Projeto Reforço Escolar.</p></div>
+  </div>
+
+  <!-- scripts -->
+  <script src="js/jquery.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/jquery-3.0.0.min.js"></script>
+  <script src="js/plugin.js"></script>
+  <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+  <script src="js/custom.js"></script>
+  <script src="js/owl.carousel.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+  <script src="https://unpkg.com/gijgo@1.9.13/js/gijgo.min.js"></script>
+  <script>
+    function openNav(){ document.getElementById('mySidenav').style.width = '100%'; }
+    function closeNav(){ document.getElementById('mySidenav').style.width = '0'; }
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

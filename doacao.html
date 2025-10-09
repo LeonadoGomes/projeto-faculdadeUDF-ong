@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Doe Agora — Todos Pela Educação</title>
+  <meta name="description" content="Apoie a Todos Pela Educação. Faça uma doação única ou mensal via cartão, PIX ou boleto e ajude a transformar a educação pública no Brasil." />
+  <meta name="keywords" content="doação, doe agora, pix, boleto, cartão, doação mensal, transparência" />
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+  <link rel="icon" href="images/favicon.png" type="image/png" />
+  <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" />
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,600,700&display=swap" rel="stylesheet" />
+
+  <style>
+    :root{ --azul:#0b3b81; --amarelo:#ffd100; --bg-suave:#f7fbff; }
+    body{ font-family:'Poppins', sans-serif; }
+    .header_section { background:var(--azul); }
+    .hero-mini{ background:var(--azul) url('images/hero-doacoes.jpg') center/cover no-repeat; color:#fff; padding:90px 0; position:relative; text-align:center; }
+    .hero-mini::after{ content:""; position:absolute; inset:0; background:rgba(11,59,129,.55); }
+    .hero-mini .container{ position:relative; z-index:2; }
+    .hero-mini h1{ font-weight:700; margin-bottom:8px; }
+    .lead-muted{ color:#e7efff; max-width:880px; margin:0 auto; }
+    .block{ padding:60px 0; }
+    .card-soft{ border:1px solid #eef2f7; border-radius:16px; padding:22px; background:#fff; box-shadow:0 6px 16px rgba(0,0,0,.04); height:100%; }
+    .donation-tabs .nav-link{ border-radius:999px; padding:.5rem 1rem; }
+    .amount-btn{ border:1px solid #e5e9f2; border-radius:12px; padding:10px 14px; background:#fff; cursor:pointer; transition:.15s; }
+    .amount-btn.active, .amount-btn:hover{ border-color:var(--azul); box-shadow:0 0 0 3px rgba(11,59,129,.12); }
+    .pix-box{ background:#0b3b8120; border:1px dashed #0b3b81; border-radius:14px; padding:16px; }
+    .secure{ color:#64748b; font-size:.9rem; }
+    .impact .card-soft{ text-align:center; }
+    .impact h2{ font-weight:700; }
+    .logos img{ height:42px; object-fit:contain; margin-right:8px; }
+    .faq .card{ border-radius:12px; overflow:hidden; }
+  </style>
+
+</head>
+<body>
+  <!-- Header -->
+  <div class="header_section">
+    <div class="container-fluid">
+      <nav class="navbar navbar-light justify-content-between navbar-expand-lg navbar-dark">
+        <a class="logo navbar-brand ml-2" href="index.html"><img src="images/logo-educacao.png" alt="Logo Todos Pela Educação" /></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"><span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item"><a class="nav-link" href="index.html">Início</a></li>
+            <li class="nav-item">
+                <a class="nav-link" href="blog.html">Blog/Notícias</a>
+              </li>
+            <li class="nav-item"><a class="nav-link" href="sobre.html">Sobre</a></li>
+            <li class="nav-item"><a class="nav-link" href="projeto-primeira-infancia.html">Projetos</a></li>
+            <li class="nav-item"><a class="nav-link active" href="doacao.html">Doações</a></li>
+            <li class="nav-item"><a class="nav-link" href="transparencia.html">Transparência</a></li>
+            <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </div>
+
+  <!-- Hero -->
+  <section class="hero-mini">
+    <div class="container">
+      <h1>Doe Agora</h1>
+      <p class="lead lead-muted">Sua doação sustenta formação de professores, inclusão digital, reforço escolar e projetos na primeira infância.</p>
+    </div>
+  </section>
+
+  <!-- Formulário de doações -->
+  <section class="block">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-7 mb-4 mb-lg-0">
+          <div class="card-soft donation-tabs">
+            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+              <li class="nav-item" role="presentation">
+                <a class="nav-link active" id="doacao-unica-tab" data-toggle="pill" href="#doacao-unica" role="tab">Doação única</a>
+              </li>
+              <li class="nav-item" role="presentation">
+                <a class="nav-link" id="doacao-mensal-tab" data-toggle="pill" href="#doacao-mensal" role="tab">Doação mensal</a>
+              </li>
+            </ul>
+            <div class="tab-content" id="pills-tabContent">
+              <!-- Única -->
+              <div class="tab-pane fade show active" id="doacao-unica" role="tabpanel">
+                <form action="/pagamentos/unica" method="post">
+                  <div class="form-group">
+                    <label>Escolha o valor</label>
+                    <div class="d-flex flex-wrap gap-2">
+                      <div class="amount-btn mr-2 mb-2" data-value="50">R$50</div>
+                      <div class="amount-btn mr-2 mb-2" data-value="100">R$100</div>
+                      <div class="amount-btn mr-2 mb-2" data-value="200">R$200</div>
+                      <div class="amount-btn mr-2 mb-2" data-value="500">R$500</div>
+                      <div class="amount-btn mr-2 mb-2" data-value="1000">R$1.000</div>
+                      <div class="amount-btn mr-2 mb-2">
+                        <input type="number" min="5" step="5" class="form-control" name="valor_custom" placeholder="Outro valor" />
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <label>Forma de pagamento</label>
+                    <select name="meio" class="form-control" required>
+                      <option value="">Selecione</option>
+                      <option value="cartao">Cartão de crédito</option>
+                      <option value="pix">PIX</option>
+                      <option value="boleto">Boleto</option>
+                    </select>
+                  </div>
+
+                  <div class="pix-box mb-3" id="pixBox" style="display:none;">
+                    <div class="d-flex align-items-center">
+                      <img src="images/pix-logo.svg" alt="PIX" height="28" class="mr-2"/>
+                      <strong>Use o QR Code para pagar</strong>
+                    </div>
+                    <div class="mt-2">
+                      <img src="images/pix-qrcode-placeholder.png" alt="QR Code PIX" class="img-fluid rounded"/>
+                      <small class="d-block mt-1 text-muted">QR Code ilustrativo — substitua pela integração real do seu gateway.</small>
+                    </div>
+                  </div>
+
+                  <div class="form-row">
+                    <div class="form-group col-md-6">
+                      <label>Nome completo</label>
+                      <input type="text" name="nome" class="form-control" required />
+                    </div>
+                    <div class="form-group col-md-6">
+                      <label>E-mail</label>
+                      <input type="email" name="email" class="form-control" required />
+                    </div>
+                  </div>
+
+                  <div class="form-row">
+                    <div class="form-group col-md-6">
+                      <label>CPF/CNPJ</label>
+                      <input type="text" name="documento" class="form-control" required />
+                    </div>
+                    <div class="form-group col-md-6">
+                      <label>Telefone</label>
+                      <input type="text" name="telefone" class="form-control" />
+                    </div>
+                  </div>
+
+                  <div class="form-group form-check">
+                    <input type="checkbox" class="form-check-input" id="lgpd1" required>
+                    <label class="form-check-label" for="lgpd1">Li e aceito a <a href="politica-privacidade.html" target="_blank">Política de Privacidade (LGPD)</a>.</label>
+                  </div>
+
+                  <button class="btn btn-primary btn-block" type="submit">Contribuir</button>
+                  <p class="secure mt-2"><i class="fa fa-lock"></i> Pagamento seguro. Emitimos recibo por e-mail automaticamente.</p>
+                </form>
+              </div>
+
+              <!-- Mensal -->
+              <div class="tab-pane fade" id="doacao-mensal" role="tabpanel">
+                <form action="/pagamentos/mensal" method="post">
+                  <div class="form-group">
+                    <label>Escolha o valor mensal</label>
+                    <div class="d-flex flex-wrap gap-2">
+                      <div class="amount-btn mr-2 mb-2" data-value="30">R$30</div>
+                      <div class="amount-btn mr-2 mb-2" data-value="50">R$50</div>
+                      <div class="amount-btn mr-2 mb-2" data-value="80">R$80</div>
+                      <div class="amount-btn mr-2 mb-2" data-value="120">R$120</div>
+                      <div class="amount-btn mr-2 mb-2">
+                        <input type="number" min="10" step="5" class="form-control" name="valor_custom_mensal" placeholder="Outro valor" />
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <label>Forma de pagamento</label>
+                    <select name="meio" class="form-control" required>
+                      <option value="">Selecione</option>
+                      <option value="cartao">Cartão de crédito</option>
+                      <option value="pix-recorrente">PIX recorrente (quando disponível)</option>
+                    </select>
+                  </div>
+
+                  <div class="form-row">
+                    <div class="form-group col-md-6">
+                      <label>Nome completo</label>
+                      <input type="text" name="nome" class="form-control" required />
+                    </div>
+                    <div class="form-group col-md-6">
+                      <label>E-mail</label>
+                      <input type="email" name="email" class="form-control" required />
+                    </div>
+                  </div>
+
+                  <div class="form-group form-check">
+                    <input type="checkbox" class="form-check-input" id="lgpd2" required>
+                    <label class="form-check-label" for="lgpd2">Autorizo a cobrança recorrente e concordo com a <a href="politica-privacidade.html" target="_blank">Política de Privacidade</a>.</label>
+                  </div>
+
+                  <button class="btn btn-primary btn-block" type="submit">Apoiar todo mês</button>
+                  <small class="d-block mt-2 text-muted">Você poderá cancelar a qualquer momento.</small>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+
+       
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="block faq" style="background:var(--bg-suave);">
+    <div class="container">
+      <h3 class="text-center mb-4">Perguntas frequentes</h3>
+      <div class="accordion" id="faq">
+        <div class="card mb-2">
+          <div class="card-header" id="q1"><h6 class="mb-0"><button class="btn btn-link" type="button" data-toggle="collapse" data-target="#a1" aria-expanded="true" aria-controls="a1">Recebo recibo para IR?</button></h6></div>
+          <div id="a1" class="collapse show" aria-labelledby="q1" data-parent="#faq"><div class="card-body">Sim. Enviamos recibo por e-mail após a confirmação do pagamento. Para doações mensais, disponibilizamos histórico no seu cadastro.</div></div>
+        </div>
+        <div class="card mb-2">
+          <div class="card-header" id="q2"><h6 class="mb-0"><button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#a2" aria-expanded="false" aria-controls="a2">Como cancelar a doação mensal?</button></h6></div>
+          <div id="a2" class="collapse" aria-labelledby="q2" data-parent="#faq"><div class="card-body">Basta solicitar pelo e-mail de suporte ou no painel do doador. O cancelamento é imediato para novas cobranças.</div></div>
+        </div>
+        <div class="card mb-2">
+          <div class="card-header" id="q3"><h6 class="mb-0"><button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#a3" aria-expanded="false" aria-controls="a3">Meus dados estão seguros?</button></h6></div>
+          <div id="a3" class="collapse" aria-labelledby="q3" data-parent="#faq"><div class="card-body">Sim. Usamos conexão criptografada (HTTPS) e processamos pagamentos via gateway certificado. Seguimos a LGPD.</div></div>
+        </div>
+      </div>
+      <div class="text-center mt-4 cta">
+        <a href="#doacao-unica" class="btn btn-primary">Quero doar</a>
+        <a href="contato.html" class="btn btn-outline-primary ml-2">Falar com a equipe</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer_section">
+    <div class="container text-center">
+      <p class="m-0">© <span id="year"></span> Todos Pela Educação — Doações</p>
+    </div>
+  </footer>
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+<script>
+document.querySelectorAll('.amount-btn[data-value]').forEach(btn => {
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('.amount-btn[data-value]').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    
+
+  });
+});
+</script>
+
+</body>
+</html>
